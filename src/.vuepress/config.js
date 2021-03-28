@@ -16,6 +16,11 @@ module.exports = {
                 email: 'pikasama@qq.com'
             }
         },
+        homeHeaderImages: [
+            {
+                "path":"https://cdn.jsdelivr.net/gh/PikaSama/homepage-static@2.0.0/images/bg.png"
+            }
+        ],
         nav: [
             {
                 text: '主页',
