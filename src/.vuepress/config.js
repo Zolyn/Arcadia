@@ -2,6 +2,7 @@ module.exports = {
     title: 'Arcadia',
     description: 'My wonderland.',
     theme: 'gungnir',
+    base: "/",
     head: [
         ['link', { rel: 'icon', href: 'https://cdn.jsdelivr.net/gh/PikaSama/blog-static-customs@2.0.1/hexo/images/icon.png' }]
     ],
@@ -47,10 +48,10 @@ module.exports = {
         pages: {
             tags: {
                 subtitle: '哟呼，这里是标签页~'
+            },
+            links: {
+                subtitle: '诶嘿，这里是链接页~'
             }
-        },
-        links: {
-            subtitle: '诶嘿，这里是链接页~'
         },
         hitokoto: true
     }
