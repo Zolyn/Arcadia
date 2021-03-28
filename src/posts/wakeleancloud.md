@@ -4,11 +4,13 @@ title: 如何解决Leancloud的流控问题？
 subtitle: 榨干容器运行时间
 date: 2020-06-20 12:09:44
 header_img: https://cdn.jsdelivr.net/gh/PikaSama/shelter-images@1.1.8/images/lncld.png
+header_style: image
 tags: 
  - 开发
  - Leancloud
 catalog: true
 ---
+<!-- more -->
 ## 前言
 
 最近登上Leancloud的后台，发现云引擎的日志里满屏都是这么一句话
@@ -16,8 +18,6 @@ catalog: true
 **CloudQueue 运行失败 xxxxx : self_wake !! {"error":"因流控原因，通过定时任务唤醒体验版实例失败，建议升级至标准版云引擎实例避免休眠 https://url.leanapp.cn/dwAEksv"}**
 
 ![avatar](https://cdn.jsdelivr.net/gh/PikaSama/shelter-images@1.1/images/bqb1.jpg)
-
-<!-- more -->
 
 然后我点了这个链接进去看了看，官方给出的说明是这样的
 

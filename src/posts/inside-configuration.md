@@ -7,15 +7,15 @@ tags:
  - 开发
  - hexo主题
 header_img: https://cdn.jsdelivr.net/gh/PikaSama/shelter-images@1.2.12/images/inside.webp
+header_style: image
 catalog: true
 ---
+<!-- more -->
 ## 前言
 
 在经过两天的本地测试，以及后续的各种修修补补，博客已经正式换为[Inside](https://github.com/ikeq/hexo-theme-inside)主题
 
 Inside主题是一个简洁，美观，开放的主题，虽然主题内置的功能并不多，但主题提供了强大的[插件](https://blog.oniuo.com/theme-inside/docs/misc#plugins)功能，可在配置中添加自己想要的文件（js脚本，css样式文件等），可自定义性强
-
-<!-- more -->
 
 **注：本文涉及内容仅为Inside主题的插件配置，** 基础配置请见[官方文档](https://blog.oniuo.com/theme-inside/)(懒得写了hhh)
 

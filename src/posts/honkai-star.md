@@ -7,15 +7,15 @@ tags:
  - 闲谈
  - 崩坏3
 header_img: https://cdn.jsdelivr.net/gh/PikaSama/shelter-images@1.0.2/images/honkai-star.png
+header_style: image
 catalog: true
 ---
+<!-- more -->
 **白虹贯日圣贤王一统天下，参商永隔再相逢物是人非。**
 
 **天冲临宫借东风再战祸斗，荧惑守心兵马变烽火四起。**
 
 **三日并出反叛军攻守同盟，七夕相会煌月城千灯璀璨。**
-
-<!-- more -->
 
 **灯影重重溯人潮暗潮涌动，千钧一发解玄机危机四伏。**
 

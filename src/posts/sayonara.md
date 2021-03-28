@@ -4,6 +4,7 @@ title: 离别，是为了更好的重逢
 subtitle: 博客暂停维护通知
 date: 2020-10-18 19:09:44
 header_img: https://cdn.jsdelivr.net/gh/PikaSama/shelter-static@1.5.1/images/pixiv_62560074.png
+header_style: image
 tags: 闲谈
 catalog: true
 ---

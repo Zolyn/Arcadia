@@ -7,8 +7,10 @@ tags:
  - 开发
  - hexo主题
 header_img: https://cdn.jsdelivr.net/gh/PikaSama/shelter-images@1.2.12/images/inside.webp
+header_style: image
 catalog: true
 ---
+<!-- more -->
 ## 前言
 
 这是上一篇文章的续篇，用于介绍一些我给主题做的拓展功能
@@ -22,8 +24,6 @@ catalog: true
 3. CSS基础
 
 不用害怕，因为我也是菜逼～
-
-<!-- more -->
 
 ## 自定义函数
 博客的自定义资源均由`scriptLoader-xxxx.js`进行加载
