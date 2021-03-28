@@ -1,14 +1,14 @@
 ---
+layout: post
 title: Inside主题进阶配置 | 附加篇
-time: 2020-08-15 08:57:42
-category: 主题
-tags: [
-    'inside',
-    'hexo主题'
-]
-sidebar: auto
+subtitle: 为主题添加更多功能
+date: 2020-08-15 08:57:42
+tags:
+ - 开发
+ - hexo主题
+header_img: https://cdn.jsdelivr.net/gh/PikaSama/shelter-images@1.2.12/images/inside.webp
+catalog: true
 ---
-![avatar](https://cdn.jsdelivr.net/gh/PikaSama/shelter-images@1.2.12/images/inside.webp)
 ## 前言
 
 这是上一篇文章的续篇，用于介绍一些我给主题做的拓展功能

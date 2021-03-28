@@ -1,14 +1,14 @@
 ---
-title: "[持续更新]Inside主题进阶配置"
-time: 2020-07-24 00:09:44
-tags: [
-    'inside',
-    'hexo主题'
-]
-category: 主题
-sidebar: auto
+layout: post
+title: Inside主题进阶配置
+subtitle: 为主题添加一些常用功能
+date: 2020-07-24 00:09:44
+tags:
+ - 开发
+ - hexo主题
+header_img: https://cdn.jsdelivr.net/gh/PikaSama/shelter-images@1.2.12/images/inside.webp
+catalog: true
 ---
-![avatar](https://cdn.jsdelivr.net/gh/PikaSama/shelter-images@1.2.12/images/inside.webp)
 ## 前言
 
 在经过两天的本地测试，以及后续的各种修修补补，博客已经正式换为[Inside](https://github.com/ikeq/hexo-theme-inside)主题

@@ -1,11 +1,14 @@
 ---
+layout: post
 title: 如何解决Leancloud的流控问题？
-time: 2020-06-20 12:09:44
-tags: Leancloud
-categories: 开发
-sidebar: auto
+subtitle: 榨干容器运行时间
+date: 2020-06-20 12:09:44
+header_img: https://cdn.jsdelivr.net/gh/PikaSama/shelter-images@1.1.8/images/lncld.png
+tags: 
+ - 开发
+ - Leancloud
+catalog: true
 ---
-![avatar](https://cdn.jsdelivr.net/gh/PikaSama/shelter-images@1.1.8/images/lncld.png)
 ## 前言
 
 最近登上Leancloud的后台，发现云引擎的日志里满屏都是这么一句话

@@ -1,11 +1,14 @@
 ---
+layout: post
 title: 我不是盘神！
+subtitle: 此度盘非彼度盘
 time: 2020-04-18 23:52:13
-tags: Pandownload
-category: 闲谈
-sidebar: auto
+tags: 
+ - Pandownload
+ - 闲谈
+header_img: https://cdn.jsdelivr.net/gh/PikaSama/shelter-images@1.1.8/images/pandownload.jpg
+catalog: true
 ---
-![avatar](https://cdn.jsdelivr.net/gh/PikaSama/shelter-images@1.1.8/images/pandownload.jpg)
 ## 谈谈PD事件
 > 2020年4月15日，Pandownload软件作者被跨省追捕，受害人刘某称其软件会在未授权的情况下把个人数据分享出去，导致隐私照片和文件被泄露，警方发现该软件可以以非会员权限突破百度网盘官方设定，实现高速下载，系侵入、非法控制计算机信息系统的程序、工具，并且该软件的使用者达到数万人，致使百度公司损失高达上千万元，犯罪嫌疑人涉嫌非法获利30万元。
 

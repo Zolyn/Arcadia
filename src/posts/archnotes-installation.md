@@ -1,12 +1,12 @@
 ---
+layout: post
 title: ArchLinux折腾小记 | 安装篇
-time: 2020-03-14 00:09:44
+subtitle: Arch邪教入教记录一
+date: 2020-03-14 00:09:44
+header_img: https://cdn.jsdelivr.net/gh/PikaSama/shelter-images@1.1.8/images/arch-install.webp
 tags: ArchLinux
-category: Linux
-sidebar: auto
+catalog: true
 ---
-![avatar](https://cdn.jsdelivr.net/gh/PikaSama/shelter-images@1.1.8/images/arch-install.webp)
-
 # 前言
 
 这篇文章算是鸽了很久了，从还没建博客时就写过一次了，只不过是写在笔记本上的2333。本文的安装教程适用于BIOS/MBR引导(因为我的电脑是BIOS引导)，安装步骤参考官方[Wiki](https://wiki.archlinux.org/index.php/Installation_guide_(%E7%AE%80%E4%BD%93%E4%B8%AD%E6%96%87))和B站up主[TheCW](https://space.bilibili.com/13081489)的[视频](https://www.bilibili.com/video/av81146687)进行，UEFI引导的教程暂时不做(鸽了鸽了)
@@ -399,5 +399,3 @@ reboot
 
 视频：
 - [BV11J411a7Tp](http://www.bilibili.com/BV11J411a7Tp)
-
-文章更新日期：2020.07.16 00:12

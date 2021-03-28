@@ -1,11 +1,14 @@
 ---
+layout: post
 title: 星与你，消失之日
-time: 2020-06-19 22:50:13
-tags: 崩坏3
-category: 闲谈
-sidebar: auto
+subtitle: 德丽莎世界第一可爱
+date: 2020-06-19 22:50:13
+tags: 
+ - 闲谈
+ - 崩坏3
+header_img: https://cdn.jsdelivr.net/gh/PikaSama/shelter-images@1.0.2/images/honkai-star.png
+catalog: true
 ---
-![avatar](https://cdn.jsdelivr.net/gh/PikaSama/shelter-images@1.0.2/images/honkai-star.png)
 **白虹贯日圣贤王一统天下，参商永隔再相逢物是人非。**
 
 **天冲临宫借东风再战祸斗，荧惑守心兵马变烽火四起。**

@@ -7,11 +7,10 @@ module.exports = {
     ],
     evergreen: true,
     themeConfig: {
-        docsDir: 'src',
         personalInfo: {
             name: "Zorin",
             avatar: "https://cdn.jsdelivr.net/gh/PikaSama/blog-static-customs@latest/vuepress/images/avatar3.png",
-            description: "The worst pupil.",
+            description: "Aphasiac soul.",
             sns: {
                 github: 'PikaSama',
                 email: 'pikasama@qq.com'
@@ -45,6 +44,14 @@ module.exports = {
                 link: '/about'
             }
         ],
+        pages: {
+            tags: {
+                subtitle: '哟呼，这里是标签页~'
+            },
+            links: {
+                subtitle: '诶嘿，这里是链接页~'
+            }
+        },
         hitokoto: true
     }
 }
