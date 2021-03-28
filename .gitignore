@@ -3,3 +3,6 @@ yarn.lock
 
 ## node modules
 node_modules
+
+## build output files
+dist
