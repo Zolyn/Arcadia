@@ -2,7 +2,6 @@ module.exports = {
     title: 'Arcadia',
     description: 'My wonderland.',
     theme: 'gungnir',
-    base: "/",
     head: [
         ['link', { rel: 'icon', href: 'https://cdn.jsdelivr.net/gh/PikaSama/blog-static-customs@2.0.1/hexo/images/icon.png' }]
     ],
@@ -17,11 +16,6 @@ module.exports = {
                 email: 'pikasama@qq.com'
             }
         },
-        homeHeaderImages: [
-            {
-                "path":"https://cdn.jsdelivr.net/gh/PikaSama/homepage-static@2.0.0/images/bg.png"
-            }
-        ],
         nav: [
             {
                 text: '主页',
@@ -45,14 +39,6 @@ module.exports = {
                 link: '/about'
             }
         ],
-        pages: {
-            tags: {
-                subtitle: '哟呼，这里是标签页~'
-            },
-            links: {
-                subtitle: '诶嘿，这里是链接页~'
-            }
-        },
         hitokoto: true
     }
 }
