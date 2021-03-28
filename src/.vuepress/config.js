@@ -7,6 +7,9 @@ module.exports = {
     ],
     evergreen: true,
     themeConfig: {
+        docsDir: 'src',
+        editLinks: true,
+        lastUpdated: true,
         personalInfo: {
             name: "Zorin",
             avatar: "https://cdn.jsdelivr.net/gh/PikaSama/blog-static-customs@latest/vuepress/images/avatar3.png",
