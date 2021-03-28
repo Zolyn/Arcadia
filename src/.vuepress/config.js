@@ -7,6 +7,7 @@ module.exports = {
     ],
     evergreen: true,
     themeConfig: {
+        repo: 'PikaSama/Arcadia',
         docsDir: 'src',
         editLinks: true,
         lastUpdated: true,
