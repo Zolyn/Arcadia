@@ -21,6 +21,30 @@ module.exports = {
                 "path":"https://cdn.jsdelivr.net/gh/PikaSama/homepage-static@2.0.0/images/bg.png"
             }
         ],
+        nav: [
+            {
+                text: '主页',
+                icon: 'home',
+                link: '/',
+            },
+            {
+                text: '文档',
+                items: [
+                    {
+                      text: 'spider-manga',
+                      link: '/docs/spider-manga',
+                    },
+                    {
+                      text: 'spider-checkupdate',
+                      link: '/docs/spider-checkupdate',
+                    },
+                  ],
+            },
+            {
+                text: '关于',
+                link: '/about'
+            },
+        ],
         pages: {
             tags: {
                 subtitle: '哟呼，这里是标签页~'
