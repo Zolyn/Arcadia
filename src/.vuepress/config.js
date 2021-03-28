@@ -24,8 +24,7 @@ module.exports = {
         nav: [
             {
                 text: '主页',
-                icon: 'home',
-                link: '/',
+                link: '/'
             },
             {
                 text: '文档',
@@ -38,12 +37,12 @@ module.exports = {
                       text: 'spider-checkupdate',
                       link: '/docs/spider-checkupdate',
                     },
-                  ],
+                  ]
             },
             {
                 text: '关于',
                 link: '/about'
-            },
+            }
         ],
         pages: {
             tags: {
