@@ -7,7 +7,7 @@ header_img: https://cdn.jsdelivr.net/gh/PikaSama/shelter-static@1.5.1/images/pix
 tags: 闲谈
 catalog: true
 ---
-
+<!-- more -->
 ## 想说的话
 人，总是要对事情做最坏打算的
 

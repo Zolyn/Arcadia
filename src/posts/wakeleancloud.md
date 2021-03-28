@@ -17,7 +17,7 @@ catalog: true
 
 ![avatar](https://cdn.jsdelivr.net/gh/PikaSama/shelter-images@1.1/images/bqb1.jpg)
 
-<!--more-->
+<!-- more -->
 
 然后我点了这个链接进去看了看，官方给出的说明是这样的
 

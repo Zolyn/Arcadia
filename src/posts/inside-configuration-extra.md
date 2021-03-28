@@ -23,7 +23,7 @@ catalog: true
 
 不用害怕，因为我也是菜逼～
 
-<!--more-->
+<!-- more -->
 
 ## 自定义函数
 博客的自定义资源均由`scriptLoader-xxxx.js`进行加载
