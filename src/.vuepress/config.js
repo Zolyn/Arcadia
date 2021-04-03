@@ -68,7 +68,7 @@ module.exports = {
         [
             '@vuepress/last-updated',
             {
-                transformer: (timestamp) => moment(timestamp).add(8, 'h')
+                transformer: (timestamp) => moment(timestamp).format('YYYY-MM-DD HH:mm:ss')
             }
         ]
     ]

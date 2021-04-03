@@ -72,7 +72,7 @@ export default {
       tags: [],
       bgImageID: 0,
       headerOpacity: 1,
-      descriptionID: ''
+      descriptionID: 0
     };
   },
   computed: {
