@@ -1,7 +1,7 @@
+const moment = require('moment');
 module.exports = {
     title: 'Arcadia',
     description: 'My wonderland.',
-    theme: 'gungnir',
     head: [
         ['link', { rel: 'icon', href: 'https://cdn.jsdelivr.net/gh/PikaSama/blog-static-customs@2.0.1/hexo/images/icon.png' }]
     ],
@@ -14,9 +14,15 @@ module.exports = {
         personalInfo: {
             name: "Zorin",
             avatar: "https://cdn.jsdelivr.net/gh/PikaSama/blog-static-customs@latest/vuepress/images/avatar3.png",
-            description: "Aphasiac soul.",
+            description: [
+                "Aphasiac Soul.",
+                "How it felt when you walked on water? Did you get your wish?",
+                "Lycoris Radiata."
+            ],
             sns: {
                 github: 'PikaSama',
+                bilibili: '163044485',
+                neteasecm: '416843684',
                 email: 'pikasama@qq.com'
             }
         },
@@ -57,5 +63,13 @@ module.exports = {
             }
         },
         hitokoto: true
-    }
+    },
+    plugins: [
+        [
+            '@vuepress/last-updated',
+            {
+                transformer: (timestamp) => moment(timestamp).add(8, 'h')
+            }
+        ]
+    ]
 }

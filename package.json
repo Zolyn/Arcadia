@@ -12,6 +12,8 @@
     "dev": "vuepress dev src"
   },
   "devDependencies": {
+    "moment": "^2.29.1",
+    "oh-vue-icons": "^0.4.1",
     "vuepress": "^1.8.2",
     "vuepress-theme-gungnir": "^0.1.6"
   }

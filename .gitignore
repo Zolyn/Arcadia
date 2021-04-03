@@ -1,3 +1,6 @@
+## IDE
+.idea
+
 ## lock file
 yarn.lock
 
