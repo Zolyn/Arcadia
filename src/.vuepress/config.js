@@ -63,18 +63,18 @@ module.exports = {
                 subtitle: '诶嘿，这里是链接页~'
             }
         },
-        hitokoto: true
-    },
-    plugins: {
-        '@vuepress/last-updated': {
-            transformer: (timestamp) => moment(timestamp).add(8, 'h').format('YYYY-MM-DD HH:mm:ss A')
-        },
-        '@vssue/vuepress-plugin-vssue': {
+        hitokoto: true,
+        comment: {
             platform: 'github-v4',
             owner: 'Zolyn',
             repo: 'Arcadia',
             clientId: 'e80da0c863ea637322d0',
             clientSecret: 'c96003743e530449af0c718ca6d4503a45306e2a'
+        }
+    },
+    plugins: {
+        '@vuepress/last-updated': {
+            transformer: (timestamp) => moment(timestamp).add(8, 'h').format('YYYY-MM-DD HH:mm:ss A')
         }
     }
 }
