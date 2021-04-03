@@ -24,7 +24,7 @@
           <div class="hero-info__text">
             <h1>{{ $themeConfig.personalInfo.name || $title }}</h1>
             <p class="description">
-              {{ $themeConfig.personalInfo.description[this.descriptionID] || $description }}
+              {{ $themeConfig.personalInfo.description[descriptionID] || $description }}
             </p>
           </div>
         </div>
