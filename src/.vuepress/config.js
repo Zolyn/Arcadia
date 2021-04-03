@@ -1,4 +1,5 @@
 const moment = require('moment');
+
 module.exports = {
     title: 'Arcadia',
     description: 'My wonderland.',
@@ -64,12 +65,16 @@ module.exports = {
         },
         hitokoto: true
     },
-    plugins: [
-        [
-            '@vuepress/last-updated',
-            {
-                transformer: (timestamp) => moment(timestamp).format('YYYY-MM-DD HH:mm:ss')
-            }
-        ]
-    ]
+    plugins: {
+        '@vuepress/last-updated': {
+            transformer: (timestamp) => moment(timestamp).add(8, 'h').format('YYYY-MM-DD HH:mm:ss A')
+        },
+        '@vssue/vuepress-plugin-vssue': {
+            platform: 'github-v4',
+            owner: 'Zolyn',
+            repo: 'Arcadia',
+            clientId: process.env.COMMENT_APPID,
+            clientSecret: process.env.COMMENT_APPKEY
+        }
+    }
 }

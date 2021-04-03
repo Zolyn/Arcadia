@@ -12,6 +12,8 @@
     "dev": "vuepress dev src"
   },
   "devDependencies": {
+    "@vssue/api-github-v4": "^1.4.7",
+    "@vssue/vuepress-plugin-vssue": "^1.4.7",
     "moment": "^2.29.1",
     "oh-vue-icons": "^0.4.1",
     "vuepress": "^1.8.2",

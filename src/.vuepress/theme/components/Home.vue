@@ -99,7 +99,7 @@ export default {
     window.addEventListener("scroll", throttle(this.handleScroll, 50));
 
     this.descriptionID = Math.floor(
-        Math.random() * this.$themeConfig.description.length
+        Math.random() * this.$themeConfig.personalInfo.description.length
     )
 
     fetch("https://v1.hitokoto.cn")
