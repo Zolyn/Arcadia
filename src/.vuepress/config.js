@@ -72,9 +72,9 @@ module.exports = {
         '@vssue/vuepress-plugin-vssue': {
             platform: 'github-v4',
             owner: 'Zolyn',
-            repo: 'https://github.com/Zolyn/Arcadia',
-            clientId: 'Iv1.51a53c4e0472f7e4',
-            clientSecret: '803232984aa2fa012b8e48d9dcce8c132c1f7434'
+            repo: 'Arcadia',
+            clientId: 'e80da0c863ea637322d0',
+            clientSecret: 'c96003743e530449af0c718ca6d4503a45306e2a'
         }
     }
 }
