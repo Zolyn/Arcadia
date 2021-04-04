@@ -75,6 +75,9 @@ module.exports = {
     plugins: {
         '@vuepress/last-updated': {
             transformer: (timestamp) => moment(timestamp).add(8, 'h').format('YYYY-MM-DD HH:mm:ss A')
+        },
+        '@Zolyn/vuepress-plugin-waline': {
+            serverURL: 'https://blog-comment.zorinchan.icu'
         }
     }
 }
