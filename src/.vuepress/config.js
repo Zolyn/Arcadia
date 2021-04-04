@@ -64,13 +64,13 @@ module.exports = {
             }
         },
         hitokoto: true,
-        comment: {
-            platform: 'github-v4',
-            owner: 'Zolyn',
-            repo: 'Arcadia',
-            clientId: 'e80da0c863ea637322d0',
-            clientSecret: 'c96003743e530449af0c718ca6d4503a45306e2a'
-        }
+        // comment: {
+        //     platform: 'github-v4',
+        //     owner: 'Zolyn',
+        //     repo: 'Arcadia',
+        //     clientId: 'e80da0c863ea637322d0',
+        //     clientSecret: 'c96003743e530449af0c718ca6d4503a45306e2a'
+        // }
     },
     plugins: {
         '@vuepress/last-updated': {
