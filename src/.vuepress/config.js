@@ -1,4 +1,5 @@
 const moment = require('moment');
+const waline = require('./plugins/@zolyn/vuepress-plugin-waline')
 
 module.exports = {
     title: 'Arcadia',
@@ -76,7 +77,7 @@ module.exports = {
         '@vuepress/last-updated': {
             transformer: (timestamp) => moment(timestamp).add(8, 'h').format('YYYY-MM-DD HH:mm:ss A')
         },
-        '@Zolyn/vuepress-plugin-waline': {
+        '@zolyn/vuepress-plugin-waline': {
             serverURL: 'https://blog-comment.zorinchan.icu'
         }
     }

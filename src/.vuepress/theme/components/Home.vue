@@ -57,6 +57,11 @@
 </template>
 
 <script>
+/*
+原项目：https://github.com/Renovamen/vuepress-theme-gungnir
+协议：Apache License 2.0
+修改内容：增加随机个人描述
+ */
 import PostList from "@theme/components/PostList";
 import SNS from "@theme/components/SNS";
 import { throttle } from "@theme/utils/time";
@@ -99,7 +104,7 @@ export default {
     window.addEventListener("scroll", throttle(this.handleScroll, 50));
 
     this.descriptionID = Math.floor(
-        Math.random() * this.$themeConfig.personalInfo.description.length
+      Math.random() * this.$themeConfig.personalInfo.description.length
     )
 
     fetch("https://v1.hitokoto.cn")

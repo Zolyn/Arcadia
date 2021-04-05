@@ -27,6 +27,11 @@
 </template>
 
 <script>
+/*
+原项目：https://github.com/Renovamen/vuepress-theme-gungnir
+协议：Apache License 2.0
+修改内容：增加联系方式
+ */
 const platform_links = {
   github: "https://github.com/",
   linkedin: "https://www.linkedin.com/in/",

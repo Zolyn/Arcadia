@@ -1,4 +1,4 @@
-import { enUS, zhCN } from "../locales";
+import { enUS, zhCN } from "../locales/index";
 
 export default {
   computed: {
