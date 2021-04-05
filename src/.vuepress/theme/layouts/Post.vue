@@ -215,6 +215,13 @@ export default {
       @extend $wrapper
       margin-top 10rem
       margin-bottom -3rem
+    /*
+     * 原项目：https://github.com/Renovamen/vuepress-theme-gungnir
+     * 协议：Apache License 2.0
+     * 修改内容：增加评论样式
+     */
+    #comment-wrapper
+      margin-top 10rem
 
 @media (max-width: $MQLarge)
   .post-container

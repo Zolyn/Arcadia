@@ -1,5 +1,4 @@
 const moment = require('moment');
-const waline = require('./plugins/@zolyn/vuepress-plugin-waline')
 
 module.exports = {
     title: 'Arcadia',
@@ -65,20 +64,16 @@ module.exports = {
             }
         },
         hitokoto: true,
-        // comment: {
-        //     platform: 'github-v4',
-        //     owner: 'Zolyn',
-        //     repo: 'Arcadia',
-        //     clientId: 'e80da0c863ea637322d0',
-        //     clientSecret: 'c96003743e530449af0c718ca6d4503a45306e2a'
-        // }
     },
     plugins: {
         '@vuepress/last-updated': {
             transformer: (timestamp) => moment(timestamp).add(8, 'h').format('YYYY-MM-DD HH:mm:ss A')
         },
         '@zolyn/vuepress-plugin-waline': {
-            serverURL: 'https://blog-comment.zorinchan.icu'
+            type: 'waline',
+            config: {
+                serverURL: 'https://blog-comment.zorinchan.icu'
+            }
         }
     }
 }

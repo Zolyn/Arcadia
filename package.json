@@ -12,12 +12,9 @@
     "dev": "vuepress dev src"
   },
   "devDependencies": {
-    "@vssue/api-github-v4": "^1.4.7",
-    "@vssue/vuepress-plugin-vssue": "^1.4.7",
     "@waline/client": "^0.14.8",
-    "@zolyn/vuepress-plugin-waline": "^1.0.1",
+    "@zolyn/vuepress-plugin-waline": "^1.1.0-beta.1",
     "moment": "^2.29.1",
-    "oh-vue-icons": "^0.4.1",
     "vuepress": "^1.8.2",
     "vuepress-theme-gungnir": "^0.1.6"
   }
