@@ -70,7 +70,6 @@ module.exports = {
             transformer: (timestamp) => moment(timestamp).add(8, 'h').format('YYYY-MM-DD HH:mm:ss A')
         },
         '@zolyn/vuepress-plugin-waline': {
-            type: 'waline',
             config: {
                 serverURL: 'https://blog-comment.zorinchan.icu'
             }
