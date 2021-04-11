@@ -70,7 +70,7 @@ OhVueIcon.add(
 export default ({ Vue, siteData, isServer }) => {
   Vue.mixin(postMixin);
   Vue.mixin(localMixin);
-  Vue.component("VIcon", OhVueIcon);
+  Vue.component("MyIcon", OhVueIcon);
   if (!isServer) {
     registerCodeThemeCss(siteData.themeConfig.codeTheme);
     registerLinks();

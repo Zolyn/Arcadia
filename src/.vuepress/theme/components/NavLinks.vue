@@ -16,7 +16,7 @@
         style="cursor: pointer"
         @click="$emit('toggle-search')"
       >
-        <v-icon
+        <my-icon
           v-if="$themeConfig.searchIcon"
           :name="$themeConfig.searchIcon"
           animation="wrench"

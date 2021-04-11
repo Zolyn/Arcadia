@@ -5,7 +5,7 @@
     :to="link"
     :exact="exact"
   >
-    <v-icon v-if="item.icon" :name="item.icon" animation="wrench" hover />
+    <my-icon v-if="item.icon" :name="item.icon" animation="wrench" hover />
     {{ item.text }}
   </router-link>
   <a
@@ -15,7 +15,7 @@
     :target="isMailto(link) || isTel(link) ? null : '_blank'"
     :rel="isMailto(link) || isTel(link) ? null : 'noopener noreferrer'"
   >
-    <v-icon v-if="item.icon" :name="item.icon" animation="wrench" hover />
+    <my-icon v-if="item.icon" :name="item.icon" animation="wrench" hover />
     {{ item.text }}
   </a>
 </template>

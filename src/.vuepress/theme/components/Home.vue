@@ -36,18 +36,18 @@
           class="img-prev hide-on-mobile"
           @click="switchImage(-1)"
         >
-          <v-icon name="fa-chevron-left" />
+          <my-icon name="fa-chevron-left" />
         </button>
         <button
           v-if="$themeConfig.homeHeaderImages"
           class="img-next hide-on-mobile"
           @click="switchImage(1)"
         >
-          <v-icon name="fa-chevron-right" />
+          <my-icon name="fa-chevron-right" />
         </button>
 
         <span class="arrow-down hide-on-mobile" @click="scrollToPost()">
-          <v-icon name="fa-chevron-down" animation="float" scale="1.7" />
+          <my-icon name="fa-chevron-down" animation="float" scale="1.7" />
         </span>
       </div>
     </div>

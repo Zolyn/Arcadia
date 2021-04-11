@@ -31,7 +31,7 @@
           "
           class="icon"
         >
-          <v-icon name="fa-regular-user" />
+          <my-icon name="fa-regular-user" />
           <span>{{
             articleInfo.frontmatter.author ||
             $themeConfig.personalInfo.name ||
@@ -40,12 +40,12 @@
         </div>
 
         <div v-if="articleInfo.frontmatter.date" class="icon">
-          <v-icon name="fa-regular-calendar" />
+          <my-icon name="fa-regular-calendar" />
           <span>{{ articleInfo.frontmatter.date | formatDateValue }}</span>
         </div>
 
         <div v-if="articleInfo.readingTime" class="icon">
-          <v-icon name="ri-timer-line" />
+          <my-icon name="ri-timer-line" />
           <span>{{ articleInfo.readingTime.minutes }} min</span>
         </div>
       </div>
