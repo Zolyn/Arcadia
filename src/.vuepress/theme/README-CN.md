@@ -41,9 +41,9 @@
 ## 安装
 
 ```bash
-yarn add -D vuepress-theme
+yarn add -D vuepress-theme-gungnir
 # or
-npm i -D vuepress-theme
+npm i -D vuepress-theme-gungnir
 ```
 
 

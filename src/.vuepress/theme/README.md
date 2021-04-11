@@ -41,9 +41,9 @@ A blog theme for [VuePress](https://vuepress.vuejs.org/). The [Jekyll](https://j
 ## Installation
 
 ```bash
-yarn add -D vuepress-theme
+yarn add -D vuepress-theme-gungnir
 # or
-npm i -D vuepress-theme
+npm i -D vuepress-theme-gungnir
 ```
 
 
