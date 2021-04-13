@@ -16,6 +16,6 @@
     "moment": "^2.29.1",
     "vuepress": "^1.8.2",
     "vuepress-theme-gungnir": "^0.1.7",
-    "@zolyn/vuepress-plugin-rightmenu": "0.0.1-alpha.5"
+    "@zolyn/vuepress-plugin-rightmenu": "0.0.1-alpha.7"
   }
 }
