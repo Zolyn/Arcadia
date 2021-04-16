@@ -24,23 +24,23 @@
       <div class="menu-btn-child-wrapper">
         <ToggleMode class="menu-btn-child" />
         <div class="menu-btn-child" @click="goToBottom">
-          <my-icon name="fa-chevron-down" />
+          <icon-wrapper name="fa-chevron-down" />
         </div>
         <div class="menu-btn-child" @click="goToTop">
-          <my-icon name="fa-chevron-up" />
+          <icon-wrapper name="fa-chevron-up" />
         </div>
         <div
           v-if="$page.frontmatter.catalog && $page.headers"
           class="menu-btn-child menu-toc-btn"
           @click="$emit('toggle-catalog')"
         >
-          <my-icon name="fa-list-ul" />
+          <icon-wrapper name="fa-list-ul" />
         </div>
         <div
           class="menu-btn-child menu-btn-sidebar"
           @click="$emit('toggle-sidebar')"
         >
-          <my-icon name="bi-layout-sidebar-inset" />
+          <icon-wrapper name="bi-layout-sidebar-inset" />
         </div>
       </div>
     </div>

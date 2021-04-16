@@ -8,10 +8,15 @@
       target="_blank"
       rel="noopener noreferrer"
     >
-      <my-icon class="icon-stack">
-        <my-icon v-if="large" name="fa-circle" scale="2.3" class="icon-circle" />
-        <my-icon :name="snsIcon(platform)" class="icon-sns" inverse />
-      </v-icon>
+      <icon-wrapper class="icon-stack">
+        <icon-wrapper
+          v-if="large"
+          name="fa-circle"
+          scale="2.3"
+          class="icon-circle"
+        />
+        <icon-wrapper :name="snsIcon(platform)" class="icon-sns" inverse />
+      </icon-wrapper>
     </a>
 
     <!-- customize sns -->
@@ -22,10 +27,15 @@
       target="_blank"
       rel="noopener noreferrer"
     >
-      <my-icon class="icon-stack">
-        <my-icon v-if="large" name="fa-circle" scale="2.3" class="icon-circle" />
-        <my-icon :name="item.icon" class="icon-sns" inverse />
-      </v-icon>
+      <icon-wrapper class="icon-stack">
+        <icon-wrapper
+          v-if="large"
+          name="fa-circle"
+          scale="2.3"
+          class="icon-circle"
+        />
+        <icon-wrapper :name="item.icon" class="icon-sns" inverse />
+      </icon-wrapper>
     </a>
 
     <!-- rss -->
@@ -35,10 +45,15 @@
       target="_blank"
       rel="noopener noreferrer"
     >
-      <my-icon class="icon-stack">
-        <my-icon v-if="large" name="fa-circle" scale="2.3" class="icon-circle" />
-        <my-icon name="fa-rss" class="icon-sns" inverse />
-      </v-icon>
+      <icon-wrapper class="icon-stack">
+        <icon-wrapper
+          v-if="large"
+          name="fa-circle"
+          scale="2.3"
+          class="icon-circle"
+        />
+        <icon-wrapper name="fa-rss" class="icon-sns" inverse />
+      </icon-wrapper>
     </a>
   </div>
 </template>

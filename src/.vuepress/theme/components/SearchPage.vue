@@ -1,7 +1,7 @@
 <template>
   <div class="search-page">
     <span class="search-close" @click="$emit('toggle-search')">
-      <my-icon name="fa-chevron-down" scale="1.8" />
+      <icon-wrapper name="fa-chevron-down" scale="1.8" />
     </span>
     <div class="search-box">
       <input

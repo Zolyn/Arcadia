@@ -24,7 +24,10 @@
           <div class="hero-info__text">
             <h1>{{ $themeConfig.personalInfo.name || $title }}</h1>
             <p class="description">
-              {{ $themeConfig.personalInfo.description[descriptionID] || $description }}
+              {{
+                $themeConfig.personalInfo.description[descriptionID] ||
+                $description
+              }}
             </p>
           </div>
         </div>
@@ -36,18 +39,18 @@
           class="img-prev hide-on-mobile"
           @click="switchImage(-1)"
         >
-          <my-icon name="fa-chevron-left" />
+          <icon-wrapper name="fa-chevron-left" />
         </button>
         <button
           v-if="$themeConfig.homeHeaderImages"
           class="img-next hide-on-mobile"
           @click="switchImage(1)"
         >
-          <my-icon name="fa-chevron-right" />
+          <icon-wrapper name="fa-chevron-right" />
         </button>
 
         <span class="arrow-down hide-on-mobile" @click="scrollToPost()">
-          <my-icon name="fa-chevron-down" animation="float" scale="1.7" />
+          <icon-wrapper name="fa-chevron-down" animation="float" scale="1.7" />
         </span>
       </div>
     </div>
@@ -105,7 +108,7 @@ export default {
 
     this.descriptionID = Math.floor(
       Math.random() * this.$themeConfig.personalInfo.description.length
-    )
+    );
 
     fetch("https://v1.hitokoto.cn")
       .then((response) => response.json())

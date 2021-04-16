@@ -2,7 +2,12 @@
   <div class="dropdown-wrapper" :class="{ open }">
     <a class="dropdown-title" @click="toggle">
       <span class="title ov-parent ov-hover">
-        <my-icon v-if="item.icon" :name="item.icon" animation="wrench" hover />
+        <icon-wrapper
+          v-if="item.icon"
+          :name="item.icon"
+          animation="wrench"
+          hover
+        />
         {{ item.text }}
       </span>
       <span class="arrow" :class="open ? 'down' : 'right'" />
