@@ -87,6 +87,19 @@ export default {
     },
     setMode(mode) {
       document.body.setAttribute("data-theme", mode);
+      switch (mode) {
+          case 'dark': {
+              this.$vuetify.theme.dark = true;
+              break;
+          }
+          case 'light': {
+              this.$vuetify.theme.dark = false;
+              break;
+          }
+          default: {
+              this.$vuefity.dark = false;
+          }
+      }
     }
   }
 };
