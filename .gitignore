@@ -1,13 +1,17 @@
-## IDE
+## IDE / Editor
 .idea
+.vscode
 
 ## lock file
 yarn.lock
 package-lock.json
+pnpm-lock.yaml
 
 ## node modules
 node_modules
 
 ## build output files
 dist
+
+# Vercel
 .vercel
