@@ -38,7 +38,6 @@ import {
 } from "oh-vue-icons/icons";
 
 OhVueIcon.add(
-  CoTencentQq,
   RiBilibiliFill,
   CoGmail,
   RiNeteaseCloudMusicFill,

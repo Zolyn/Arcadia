@@ -1,6 +1,6 @@
 #!/bin/bash
 echo 'Cleaning old files...'
-rm -rf theme
+rm -rf ~/MyFiles/projects/Arcadia/src/.vuepress/theme
 echo 'Copying new files...'
-cp -r ../../../vuepress-theme-gungnir/packages/theme-gungnir theme
+cp -r ~/MyFiles/projects/vuepress-theme-gungnir/packages/theme-gungnir ~/MyFiles/projects/Arcadia/src/.vuepress/theme
 echo 'Done'
