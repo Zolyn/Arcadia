@@ -22,10 +22,18 @@ module.exports = {
                 "Lycoris Radiata."
             ],
             sns: {
-                github: 'PikaSama',
-                bilibili: '163044485',
-                neteasecm: '416843684',
-                email: 'pikasama@qq.com'
+                github: 'Zolyn',
+                email: 'pikasama@qq.com',
+                customize: [
+                    {
+                        icon: 'ri-bilibili-fill',
+                        link: 'https://music.163.com/#/user/home?id=416843684'
+                    },
+                    {
+                        icon: 'ri-netease-cloud-music-fill',
+                        link: 'https://space.bilibili.com/163044485'
+                    }
+                ]
             }
         },
         homeHeaderImages: [
