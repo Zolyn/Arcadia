@@ -1,0 +1,3 @@
+[submodule "src/.vuepress/theme"]
+	path = src/.vuepress/theme
+	url = https://github.com/Zolyn/vuepress-theme-gungnir
