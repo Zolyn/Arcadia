@@ -1,6 +1,6 @@
 const moment = require('moment');
 const { resolve } = require('path');
-const version = '2021.4.26-alpha.0'
+const version = '2021.4.26-release.0'
 module.exports = {
     title: 'Arcadia',
     description: 'My wonderland.',
@@ -38,7 +38,7 @@ module.exports = {
         },
         homeHeaderImages: [
             {
-                "path":`https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg1.png`
+                "path":`https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg1.jpg`
             },
             {
                 "path":`https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg2.png`
@@ -48,6 +48,9 @@ module.exports = {
             },
             {
                 "path":`https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg4.png`
+            },
+            {
+                "path":`https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg5.jpg`
             },
         ],
         nav: [
