@@ -1,6 +1,6 @@
 const moment = require('moment');
 const { resolve } = require('path');
-
+const version = '2021.4.26-alpha.0'
 module.exports = {
     title: 'Arcadia',
     description: 'My wonderland.',
@@ -18,7 +18,7 @@ module.exports = {
             avatar: "https://cdn.jsdelivr.net/gh/PikaSama/blog-static-customs@latest/vuepress/images/avatar3.png",
             description: [
                 "Aphasiac Soul.",
-                "How it felt when you walked on water? Did you get your wish?",
+                "Did you get your wish?",
                 "Lycoris Radiata."
             ],
             sns: {
@@ -38,8 +38,17 @@ module.exports = {
         },
         homeHeaderImages: [
             {
-                "path":"https://cdn.jsdelivr.net/gh/PikaSama/homepage-static@2.0.0/images/bg.png"
-            }
+                "path":`https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg1.png`
+            },
+            {
+                "path":`https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg2.png`
+            },
+            {
+                "path":`https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg3.png`
+            },
+            {
+                "path":`https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg4.png`
+            },
         ],
         nav: [
             {
