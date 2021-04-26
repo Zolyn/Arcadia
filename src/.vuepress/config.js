@@ -27,11 +27,11 @@ module.exports = {
                 customize: [
                     {
                         icon: 'ri-bilibili-fill',
-                        link: 'https://music.163.com/#/user/home?id=416843684'
+                        link: 'https://space.bilibili.com/163044485'
                     },
                     {
                         icon: 'ri-netease-cloud-music-fill',
-                        link: 'https://space.bilibili.com/163044485'
+                        link: 'https://music.163.com/#/user/home?id=416843684'
                     }
                 ]
             }
@@ -48,9 +48,6 @@ module.exports = {
             },
             {
                 "path":`https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg4.png`
-            },
-            {
-                "path":`https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg5.jpg`
             },
         ],
         nav: [
