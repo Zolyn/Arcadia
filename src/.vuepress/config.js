@@ -95,8 +95,8 @@ module.exports = {
                 serverURL: 'https://blog-comment.zorinchan.icu'
             }
         },
-        // '@zolyn/vuepress-plugin-rightmenu': {
-        //     config: resolve(__dirname, 'rightmenu.js')
-        // }
+        '@zolyn/vuepress-plugin-rightmenu': {
+            config: resolve(__dirname, 'rightmenu.js')
+        }
     }
 }
