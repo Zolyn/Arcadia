@@ -18,3 +18,5 @@
 - layouts/Post.vue
   1. 适配插件 @zolyn/vuepress-plugin-waline 的评论样式
 
+- locales/en-US.js
+  1. 覆盖语言文件，设置为中文
