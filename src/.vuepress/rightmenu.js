@@ -56,8 +56,10 @@ module.exports = {
                 this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
                 if (this.$vuetify.theme.dark) {
                     document.body.setAttribute('data-theme', 'dark');
+                    localStorage.setItem('mode', 'dark');
                 } else {
                     document.body.setAttribute('data-theme', 'light');
+                    localStorage.setItem('mode', 'light');
                 }
             },
         },
