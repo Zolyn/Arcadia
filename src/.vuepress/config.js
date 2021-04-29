@@ -23,7 +23,7 @@ module.exports = {
             ],
             sns: {
                 github: 'Zolyn',
-                email: 'pikasama@qq.com',
+                email: 'zorin1477@gmail.com',
                 customize: [
                     {
                         icon: 'ri-bilibili-fill',
