@@ -88,23 +88,10 @@ export default {
     /*
     原项目：https://github.com/Renovamen/vuepress-theme-gungnir
     协议：Apache License 2.0
-    修改内容：适配插件 @zolyn/vuepress-plugin-rightmenu 的夜间模式
+    修改内容：暂无
     */
     setMode(mode) {
       document.body.setAttribute("data-theme", mode);
-      switch (mode) {
-          case 'dark': {
-              this.$vuetify.theme.dark = true;
-              break;
-          }
-          case 'light': {
-              this.$vuetify.theme.dark = false;
-              break;
-          }
-          default: {
-              this.$vuefity.dark = false;
-          }
-      }
     }
   }
 };
