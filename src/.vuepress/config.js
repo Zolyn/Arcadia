@@ -76,7 +76,7 @@ module.exports = {
             }
         ],
         sidebar: {
-            '/docs/vuepress-plugin-rightmenu': [
+            '/docs/vuepress-plugin-rightmenu/': [
                 {
                     title: '基础',
                     collapsable: false,
