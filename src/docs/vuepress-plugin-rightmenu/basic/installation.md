@@ -10,11 +10,13 @@ date: 2021-05-01
 npm install -D @zolyn/vuepress-plugin-rightmenu
 ```
 </code-block>
+
 <code-block title="YARN" active>
 ```bash
 yarn add -D @zolyn/vuepress-plugin-rightmenu
 ```
 </code-block>
+
 <code-block title="PNPM">
 ```bash
 pnpm add -D @zolyn/vuepress-plugin-rightmenu
@@ -40,6 +42,7 @@ module.exports = {
 }
 ```
 </code-block>
+
 <code-block title="Babel式">
 ```js {6-12}
 // .vuepress/config.js
@@ -73,6 +76,7 @@ module.exports = {
 }
 ```
 </code-block>
+
 <code-block title="Babel式">
 ```js {4}
 // .vuepress/config.js
