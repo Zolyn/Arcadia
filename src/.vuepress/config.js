@@ -113,7 +113,6 @@ module.exports = {
             config: resolve(__dirname, './rightmenu.js')
         },
         'md-enhance': {
-            linenumbers: true,
             align: true,
             sup: true,
             sub: true,
@@ -123,6 +122,8 @@ module.exports = {
         '@mr-hope/pwa': {
             favicon: resolve(__dirname, './public/icon.png'),
             themeColor: '#377bb5'
-        }
+        },
+        'photo-swipe': {},
+        '@mr-hope/copy-code': {}
     }
 }
