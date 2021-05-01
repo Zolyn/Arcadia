@@ -1,15 +1,17 @@
 const moment = require('moment');
 const { resolve } = require('path');
 const version = '2021.4.26-release.0'
+
 module.exports = {
     title: 'Arcadia',
     description: 'My wonderland.',
     head: [
-        ['link', { rel: 'icon', href: 'https://cdn.jsdelivr.net/gh/PikaSama/blog-static-customs@2.0.1/hexo/images/icon.png' }]
+        ['link', { rel: 'icon', href: 'https://cdn.jsdelivr.net/gh/PikaSama/blog-static-customs@2.0.1/hexo/images/icon.png' }],
+        ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }]
     ],
     evergreen: true,
     themeConfig: {
-        repo: 'PikaSama/Arcadia',
+        repo: 'Zolyn/Arcadia',
         docsDir: 'src',
         editLinks: true,
         lastUpdated: true,
