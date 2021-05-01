@@ -4,20 +4,33 @@ date: 2021-05-01
 ---
 vuepress-plugin-rightmenu 是一个适用于[Vuepress](https://v1.vuepress.vuejs.org/zh/) 的右键菜单插件，插件使用 [Vuetify](https://github.com/vuetifyjs/vuetify) 作为UI框架，[PureCSS](https://github.com/pure-css/pure) 作为CSS框架
 
-<span>
+<div class="pure-g">
+<div class="pure-u pure-gutter">
 <a href="https://npmjs.com/package/@zolyn/vuepress-plugin-rightmenu" target="_blank">
 <img alt="npm" src="https://img.shields.io/npm/v/@zolyn/vuepress-plugin-rightmenu?style=flat-square"/>
 </a>
+</div>
+<div class="pure-u pure-gutter">
 <a href="https://npmjs.com/package/@zolyn/vuepress-plugin-rightmenu" target="_blank">
 <img alt="npmscoped" src="https://img.shields.io/npm/dw/@zolyn/vuepress-plugin-rightmenu?style=flat-square"/>
 </a>
+</div>
+<div class="pure-u pure-gutter">
 <a href="https://github.com/Zolyn" target="_blank">
-<img alt="author" src="https://img.shields.io/badge/author-Zorin-9cf?style=flat-square&logo=github"/>
+<img alt="author" src="https://img.shields.io/badge/author-Zorin-26a2ff?style=flat-square&logo=github"/>
 </a>
+</div>
+<div class="pure-u pure-gutter">
 <a href="https://github.com/Zolyn/vuepress-plugin-rightmenu" target="_blank">
 <img alt="npm" src="https://img.shields.io/github/license/Zolyn/vuepress-plugin-rightmenu?style=flat-square"/>
 </a>
-</span>
+</div>
+<style>
+.pure-gutter {
+padding: 2px
+}
+</style>
+</div>
 
 ## 图片预览
 ![preview](https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@2021.5.1-release.0/vuepress/images/rightmenu/preview.png)

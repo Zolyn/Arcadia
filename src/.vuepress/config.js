@@ -113,6 +113,7 @@ module.exports = {
             config: resolve(__dirname, './rightmenu.js')
         },
         'md-enhance': {
+            linenumbers: false,
             align: true,
             sup: true,
             sub: true,
@@ -123,7 +124,12 @@ module.exports = {
             favicon: resolve(__dirname, './public/icon.png'),
             themeColor: '#377bb5'
         },
-        'photo-swipe': {},
-        '@mr-hope/copy-code': {}
+        'photo-swipe': {
+            container: '.theme-content',
+            selector: '.theme-content :not(a) > img'
+        },
+        '@mr-hope/copy-code': {
+            selector: '.theme-content div[class*="language-"] pre'
+        }
     }
 }
