@@ -82,7 +82,7 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '',
-                        'basic/description'
+                        'basic/installation'
                     ]
                 }
             ]
