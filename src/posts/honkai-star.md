@@ -1,8 +1,7 @@
 ---
-layout: post
 title: 星与你，消失之日
 subtitle: 德丽莎世界第一可爱
-date: 2020-06-19 22:50:13
+date: 2020-06-19
 tags: 
  - 闲谈
  - 崩坏3

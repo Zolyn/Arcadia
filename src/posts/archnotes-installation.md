@@ -1,8 +1,7 @@
 ---
-layout: post
 title: ArchLinux折腾小记 | 安装篇
 subtitle: Arch邪教入教记录一
-date: 2020-03-14 00:09:44
+date: 2020-03-14
 header_img: https://cdn.jsdelivr.net/gh/PikaSama/shelter-images@1.1.8/images/arch-install.webp
 header_style: image
 tags: 

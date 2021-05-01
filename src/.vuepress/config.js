@@ -40,16 +40,16 @@ module.exports = {
         },
         homeHeaderImages: [
             {
-                "path":`https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg1.jpg`
+                "path": `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg1.jpg`
             },
             {
-                "path":`https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg2.png`
+                "path": `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg2.png`
             },
             {
-                "path":`https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg3.png`
+                "path": `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg3.png`
             },
             {
-                "path":`https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg4.png`
+                "path": `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg4.png`
             },
         ],
         nav: [
@@ -61,20 +61,31 @@ module.exports = {
                 text: '文档',
                 items: [
                     {
-                      text: 'spider-manga',
-                      link: '/docs/spider-manga',
+                        text: 'spider-manga',
+                        link: '/docs/spider-manga',
                     },
                     {
-                      text: 'spider-checkupdate',
-                      link: '/docs/spider-checkupdate',
+                        text: 'spider-checkupdate',
+                        link: '/docs/spider-checkupdate',
                     },
-                  ]
+                ]
             },
             {
                 text: '关于',
                 link: '/about'
             }
         ],
+        sidebar: {
+            '/docs/vuepress-plugin-rightmenu': [
+                {
+                    title: '基础',
+                    collapsable: false,
+                    children: [
+                        'basic/description'
+                    ]
+                }
+            ]
+        },
         pages: {
             tags: {
                 subtitle: '哟呼，这里是标签页~'
@@ -89,7 +100,7 @@ module.exports = {
         '@vuepress/last-updated': {
             transformer: (timestamp) => moment(timestamp).add(8, 'h').format('YYYY-MM-DD HH:mm:ss A')
         },
-        '@zolyn/vuepress-plugin-waline': {
+        '@zolyn/waline': {
             plugin: {
                 debug: true
             },
@@ -97,8 +108,20 @@ module.exports = {
                 serverURL: 'https://blog-comment.zorinchan.icu'
             }
         },
-        '@zolyn/vuepress-plugin-rightmenu': {
-            config: resolve(__dirname, 'rightmenu.js')
+        '@zolyn/rightmenu': {
+            config: resolve(__dirname, './rightmenu.js')
+        },
+        'md-enhance': {
+            linenumbers: true,
+            align: true,
+            sup: true,
+            sub: true,
+            footnote: true,
+            tasklist: true,
+        },
+        '@mr-hope/pwa': {
+            favicon: resolve(__dirname, './public/icon.png'),
+            themeColor: '#377bb5'
         }
     }
 }
