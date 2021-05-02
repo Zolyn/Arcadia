@@ -78,7 +78,7 @@ export default {
       currentPage: 1,
       tags: [],
       bgImageID: 0,
-      unsplashImg: 'https://source.unsplash.com/1600x900/?nature,water,sunset,dusk,space,moonlight',
+      unsplashImg: '',
       headerOpacity: 1,
       descriptionID: 0
     };
@@ -103,10 +103,11 @@ export default {
       Math.random() * this.$themeConfig.personalInfo.description.length
     );
 
-    axios.get('https://v1.hitokoto.cn').then(data => {
+    axios.get('https://v1.hitokoto.cn').then(({ data }) => {
         const hitokoto = this.$refs.hitokoto;
         hitokoto.innerText = data.hitokoto;
     }).catch(err => console.error(err));
+    this.getUnsplashImage();
   },
 
   beforeDestroy() {
@@ -124,7 +125,7 @@ export default {
       }
     },
     getUnsplashImage() {
-        // 获取重定向后的地址，如果获取失败则默认为API地址
+        // 获取重定向后的地址
         axios.get('https://source.unsplash.com/1600x900/?nature,water,sunset,dusk,space,moonlight').then(({ request }) => {
             this.unsplashImg = request.responseURL;
             console.log('Image URL:', this.unsplashImg);
