@@ -66,6 +66,7 @@
 import PostList from "@theme/components/PostList";
 import SNS from "@theme/components/SNS";
 import { throttle } from "@theme/utils/time";
+import axios from 'axios';
 
 export default {
   components: {
@@ -89,9 +90,13 @@ export default {
         )})`;
         return bgPath;
       } else {
-        const bgURL =
-          "url('https://source.unsplash.com/1600x900/?nature,water,sunset,dusk,space,moonlight')";
-        return bgURL;
+        let bgURL = 'https://source.unsplash.com/1600x900/?nature,water,sunset,dusk,space,moonlight';
+        // 获取重定向后的地址，如果获取失败则改为API地址
+        axios.get('https://source.unsplash.com/1600x900/?nature,water,sunset,dusk,space,moonlight').then(({ request }) => {
+            bgURL = request.responseURL;
+            console.log('Image URL:', bgURL);
+        }).catch(err => console.error(err));
+        return `url(${bgURL})`;
       }
     },
     heroHeight() {
@@ -108,13 +113,10 @@ export default {
       Math.random() * this.$themeConfig.personalInfo.description.length
     );
 
-    fetch("https://v1.hitokoto.cn")
-      .then((response) => response.json())
-      .then((data) => {
+    axios.get('https://v1.hitokoto.cn').then(resp => {
         const hitokoto = this.$refs.hitokoto;
         hitokoto.innerText = data.hitokoto;
-      })
-      .catch(console.error);
+    }).catch(err => console.error(err));
   },
 
   beforeDestroy() {
