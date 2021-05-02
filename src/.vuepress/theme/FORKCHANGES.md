@@ -17,11 +17,9 @@
 - components/ToggleMode.vue
   1. 适配插件 @zolyn/vuepress-plugin-rightmenu 的夜间模式
 
-- layouts/Post.vue
-  1. 适配插件 @zolyn/vuepress-plugin-waline 的评论样式
-  
 - components/Page.vue
   1. 适配插件 @mr-hope/vuepress-plugin-copy-code，修改复制按钮的显示层级
+  2. 适配插件 @zolyn/vuepress-plugin-waline 的评论样式
 
 - styles/mode.styl
   1. 适配插件 @mr-hope/vuepress-plugin-copy-code 和 @mr-hope/vuepress-plugin-pwa，修改组件样式  

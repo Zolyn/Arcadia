@@ -155,7 +155,9 @@ export default {
 /*
 原项目：https://github.com/Renovamen/vuepress-theme-gungnir
 协议：Apache License 2.0
-修改内容： 适配插件 @mr-hope/vuepress-plugin-copy-code，修改复制按钮的显示层级
+修改内容：
+    1. 适配插件 @mr-hope/vuepress-plugin-copy-code，修改复制按钮的显示层级
+    2. 适配插件 @zolyn/vuepress-plugin-waline 的评论样式
  */
 @require '../styles/wrapper.styl'
 @require '../styles/mixins.styl'
@@ -178,6 +180,8 @@ export default {
     @extend $wrapper
     padding 2rem 0
     margin-top 3rem
+  #comment-wrapper
+    margin 10rem 5% 0
 
 .theme-content div[class*="language-"] .copy-code-button
     z-index 1
