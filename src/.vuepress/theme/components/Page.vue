@@ -152,6 +152,11 @@ export default {
 </script>
 
 <style lang="stylus">
+/*
+原项目：https://github.com/Renovamen/vuepress-theme-gungnir
+协议：Apache License 2.0
+修改内容： 适配插件 @mr-hope/vuepress-plugin-copy-code，修改复制按钮的显示层级
+ */
 @require '../styles/wrapper.styl'
 @require '../styles/mixins.styl'
 

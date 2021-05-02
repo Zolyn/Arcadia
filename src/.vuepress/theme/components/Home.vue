@@ -61,7 +61,11 @@
 /*
 原项目：https://github.com/Renovamen/vuepress-theme-gungnir
 协议：Apache License 2.0
-修改内容：增加随机个人描述，修改Unsplash API请求地址
+修改内容：
+  1. 增加随机个人描述，修复原主题Unsplash随机壁纸无法显示的问题，更改壁纸的显示策略
+  2. 壁纸显示策略：如果为自定义壁纸，则遵循原主题的显示策略；如果为Unsplash随机壁纸，则会在主页组件挂载后
+     用axios请求特定的Unsplash API地址，获取图片的真实链接而非API地址，每次切换图片时会执行相同的操作，有概率请求到同一张图片
+  3. 使用axios请求一言API
  */
 import PostList from "@theme/components/PostList";
 import SNS from "@theme/components/SNS";

@@ -88,7 +88,8 @@ module.exports = {
                     collapsable: false,
                     children: [
                         '',
-                        'basic/installation'
+                        'basic/installation',
+                        'basic/configuration'
                     ]
                 }
             ]
