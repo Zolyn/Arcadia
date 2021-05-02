@@ -114,7 +114,7 @@ module.exports = {
             config: resolve(__dirname, './rightmenu.js')
         },
         'md-enhance': {
-            linenumbers: false,
+            lineNumbers: false,
             align: true,
             sup: true,
             sub: true,
