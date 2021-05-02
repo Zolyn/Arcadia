@@ -10,6 +10,11 @@ import { registerCodeThemeCss, registerLinks } from "@theme/utils/other";
 import OhVueIcon from "oh-vue-icons";
 
 import {
+  RiHomeWifiFill,
+  BiTagFill,
+  RiLinksFill,
+  RiBook2Fill,
+  RiSearch2Line,
   RiBilibiliFill,
   CoGmail,
   RiNeteaseCloudMusicFill,
@@ -38,6 +43,11 @@ import {
 } from "oh-vue-icons/icons";
 
 OhVueIcon.add(
+  RiHomeWifiFill,
+  BiTagFill,
+  RiLinksFill,
+  RiBook2Fill,
+  RiSearch2Line,
   RiBilibiliFill,
   CoGmail,
   RiNeteaseCloudMusicFill,

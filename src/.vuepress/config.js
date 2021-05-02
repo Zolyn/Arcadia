@@ -25,8 +25,10 @@ module.exports = {
             avatar: "https://cdn.jsdelivr.net/gh/PikaSama/blog-static-customs@latest/vuepress/images/avatar3.png",
             description: [
                 "Aphasiac Soul.",
+                "Lycoris Radiata.",
                 "Did you get your wish?",
-                "Lycoris Radiata."
+                "Do not go gentle into that good night.",
+                "Drowning in the hope of others."
             ],
             sns: {
                 github: 'Zolyn',
@@ -61,11 +63,27 @@ module.exports = {
         nav: [
             {
                 text: '主页',
+                icon: 'ri-home-wifi-fill',
                 link: '/'
             },
             {
+                text: '标签',
+                icon: 'bi-tag-fill',
+                link: '/tags'
+            },
+            {
+                text: '友链',
+                icon: 'ri-links-fill',
+                link: '/links'
+            },
+            {
                 text: '文档',
+                icon: 'ri-book-2-fill',
                 items: [
+                    {
+                        text: 'vuepress-plugin-rightmenu',
+                        link: '/docs/vuepress-rightmenu'
+                    },
                     {
                         text: 'spider-manga',
                         link: '/docs/spider-manga',
@@ -96,13 +114,24 @@ module.exports = {
         },
         pages: {
             tags: {
-                subtitle: '哟呼，这里是标签页~'
+                subtitle: '哟呼，这里是标签页~',
+                bgImage: {
+                    path: 'https://static.monknow.com/newtab/wallpaper/cf6fd3d54ca792b0dbc61983a5fa5e2a.jpg'
+                }
             },
             links: {
-                subtitle: '诶嘿，这里是链接页~'
+                subtitle: '诶嘿，这里是链接页~',
+                bgImage: {
+                    path: 'https://static.monknow.com/newtab/wallpaper/c44de9f778cfd4b199c77558edc4c368.jpg'
+                }
             }
         },
+        readingTime: {
+            wordsPerMinuteCN: 600,
+            wordsPerMinuteEN: 300
+        },
         hitokoto: true,
+        searchIcon: 'ri-search-2-line',
         footer: `
         &copy;<a href="https://github.com/Zolyn" target="_blank"> Zolyn</a> 💖 2020-2021
         <br>
@@ -169,6 +198,11 @@ module.exports = {
         },
         '@mr-hope/copy-code': {
             selector: '.theme-content div[class*="language-"] pre'
+        },
+        '@renovamen/rss': {
+            site_url: 'https://blog.zorinchan.icu',
+            copyright: 'Zorin 2020-2021',
+            count: 20
         }
     }
 }
