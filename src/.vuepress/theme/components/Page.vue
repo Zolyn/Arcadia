@@ -174,6 +174,9 @@ export default {
     padding 2rem 0
     margin-top 3rem
 
+.theme-content div[class*="language-"] .copy-code-button
+    z-index 1
+
 @media (max-width: $MQLarge)
   .page
     .vssue-comment-wrapper

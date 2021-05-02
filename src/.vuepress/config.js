@@ -1,12 +1,17 @@
 const moment = require('moment');
 const { resolve } = require('path');
-const version = '2021.4.26-release.0'
+const version = '2021.5.1-release.0'
 
 module.exports = {
-    title: 'Arcadia',
-    description: 'My wonderland.',
+    locales: {
+        '/': {
+            lang: 'zh-CN',
+            title: 'Arcadia',
+            description: 'My wonderland.',
+        }
+    },
     head: [
-        ['link', { rel: 'icon', href: 'https://cdn.jsdelivr.net/gh/PikaSama/blog-static-customs@2.0.1/hexo/images/icon.png' }],
+        ['link', { rel: 'icon', href: `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/hexo/images/icon.png` }],
         ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }]
     ],
     evergreen: true,
@@ -123,7 +128,25 @@ module.exports = {
         },
         '@mr-hope/pwa': {
             favicon: resolve(__dirname, './public/icon.png'),
-            themeColor: '#377bb5'
+            themeColor: '#377bb5',
+            cachePic: true,
+            maxSize: 4096,
+            maxPicSize: 4096,
+            manifest: {
+                icons: [
+                    {
+                        src: `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/hexo/images/icon.png`,
+                        sizes: '128x128'
+                    }
+                ]
+            },
+            apple: {
+                icon: `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/hexo/images/icon.png`,
+                maskIcon: `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/hexo/images/icon.png`
+            },
+            msTile: {
+                image: `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/hexo/images/icon.png`
+            }
         },
         'photo-swipe': {
             container: '.theme-content',
