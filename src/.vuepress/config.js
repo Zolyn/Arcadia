@@ -38,20 +38,21 @@ module.exports = {
                 ]
             }
         },
-        // homeHeaderImages: [
-        //     {
-        //         "path": `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg1.jpg`
-        //     },
-        //     {
-        //         "path": `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg2.png`
-        //     },
-        //     {
-        //         "path": `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg3.png`
-        //     },
-        //     {
-        //         "path": `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg4.png`
-        //     },
-        // ],
+        homeHeaderImages: [
+            {}
+            // {
+            //     "path": `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg1.jpg`
+            // },
+            // {
+            //     "path": `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg2.png`
+            // },
+            // {
+            //     "path": `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg3.png`
+            // },
+            // {
+            //     "path": `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg4.png`
+            // },
+        ],
         nav: [
             {
                 text: '主页',
