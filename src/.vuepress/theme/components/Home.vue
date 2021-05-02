@@ -63,7 +63,7 @@
 /*
 原项目：https://github.com/Renovamen/vuepress-theme-gungnir
 协议：Apache License 2.0
-修改内容：增加随机个人描述
+修改内容：增加随机个人描述，修改Unsplash API请求地址
  */
 import PostList from "@theme/components/PostList";
 import SNS from "@theme/components/SNS";
@@ -92,7 +92,7 @@ export default {
         return bgPath;
       } else {
         const bgURL =
-          "url(https://source.unsplash.com/collection/1065374/1600x900)";
+          "url(https://source.unsplash.com/1600x900/?nature,water,sunset,dusk,space,moonlight)";
         return bgURL;
       }
     },
