@@ -130,8 +130,8 @@ module.exports = {
             favicon: '/icon.png',
             themeColor: '#377bb5',
             cachePic: true,
-            maxSize: 4096,
-            maxPicSize: 4096,
+            maxSize: 2560,
+            maxPicSize: 2048,
             manifest: {
                 icons: [
                     {
