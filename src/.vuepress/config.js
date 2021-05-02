@@ -38,7 +38,7 @@ module.exports = {
                 ]
             }
         },
-        homeHeaderImages: '',
+        homeHeaderImages: false,
         // homeHeaderImages: [
         //     // {
         //     //     "path": `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/vuepress/images/bg1.jpg`

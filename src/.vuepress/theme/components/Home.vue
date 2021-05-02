@@ -2,7 +2,7 @@
   <div class="home-blog">
     <div class="hero" :style="{ 'background-image': bgImagePath }">
       <div
-        v-if="$themeConfig.homeHeaderImages[bgImageID].mask"
+        v-if="$themeConfig.homeHeaderImages[bgImageID] && $themeConfig.homeHeaderImages[bgImageID].mask"
         class="header-mask"
         :style="{ background: $themeConfig.homeHeaderImages[bgImageID].mask }"
       />
@@ -35,14 +35,12 @@
         <SNS class="hide-on-mobile" large />
 
         <button
-          v-if="$themeConfig.homeHeaderImages"
           class="img-prev hide-on-mobile"
           @click="switchImage(-1)"
         >
           <icon-wrapper name="fa-chevron-left" />
         </button>
         <button
-          v-if="$themeConfig.homeHeaderImages"
           class="img-next hide-on-mobile"
           @click="switchImage(1)"
         >
@@ -126,8 +124,12 @@ export default {
   methods: {
     // switch to the next header image
     switchImage(n) {
-      const len = this.$themeConfig.homeHeaderImages.length;
-      this.bgImageID = (this.bgImageID + n + len) % len;
+      if (this.$themeConfig.homeHeaderImages[this.bgImageID]) {
+          const len = this.$themeConfig.homeHeaderImages.length;
+          this.bgImageID = (this.bgImageID + n + len) % len;
+      } else {
+          this.bgImageID = Math.floor(Math.random() * 100);
+      }
     },
     scrollToPost() {
       window.scrollTo({
