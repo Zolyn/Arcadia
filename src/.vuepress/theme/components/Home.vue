@@ -83,14 +83,14 @@ export default {
   },
   computed: {
     bgImagePath() {
-      if (this.$themeConfig.homeHeaderImages) {
+      if (this.$themeConfig.homeHeaderImages[this.bgImageID]) {
         const bgPath = `url(${this.$withBase(
           this.$themeConfig.homeHeaderImages[this.bgImageID].path
         )})`;
         return bgPath;
       } else {
         const bgURL =
-          "url(https://source.unsplash.com/1600x900/?nature,water,sunset,dusk,space,moonlight)";
+          "url('https://source.unsplash.com/1600x900/?nature,water,sunset,dusk,space,moonlight')";
         return bgURL;
       }
     },
@@ -128,7 +128,7 @@ export default {
           const len = this.$themeConfig.homeHeaderImages.length;
           this.bgImageID = (this.bgImageID + n + len) % len;
       } else {
-          this.bgImageID = Math.floor(Math.random() * 100);
+          this.bgImageID = Math.floor(Math.random() * 100) + 'unsplash';
       }
     },
     scrollToPost() {
