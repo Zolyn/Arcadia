@@ -5,11 +5,11 @@ const version = '2021.5.1-release.0'
 module.exports = {
     locales: {
         '/': {
-            lang: 'zh-CN',
-            title: 'Arcadia',
-            description: 'My wonderland.',
+            lang: 'zh-CN'
         }
     },
+    title: 'Arcadia',
+    description: 'My wonderland.',
     head: [
         ['link', { rel: 'icon', href: `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/hexo/images/icon.png` }],
         ['meta', { name: 'viewport', content: 'width=device-width, initial-scale=1' }]
