@@ -133,6 +133,7 @@ module.exports = {
             maxSize: 2560,
             maxPicSize: 2048,
             manifest: {
+                lang: 'en-US',
                 icons: [
                     {
                         src: '/icon.png',
