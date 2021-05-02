@@ -127,7 +127,7 @@ module.exports = {
             tasklist: true,
         },
         '@mr-hope/pwa': {
-            favicon: resolve(__dirname, './public/icon.png'),
+            favicon: '/icon.png',
             themeColor: '#377bb5',
             cachePic: true,
             maxSize: 4096,
@@ -135,17 +135,18 @@ module.exports = {
             manifest: {
                 icons: [
                     {
-                        src: `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/hexo/images/icon.png`,
-                        sizes: '128x128'
+                        src: '/icon.png',
+                        sizes: '128x128',
+                        type: 'image/png'
                     }
                 ]
             },
             apple: {
-                icon: `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/hexo/images/icon.png`,
-                maskIcon: `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/hexo/images/icon.png`
+                icon: '/icon.png',
+                maskIcon: '/icon.png'
             },
             msTile: {
-                image: `https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@${version}/hexo/images/icon.png`
+                image: '/icon.png'
             }
         },
         'photo-swipe': {
