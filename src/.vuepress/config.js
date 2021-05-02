@@ -108,7 +108,7 @@ module.exports = {
         Powered by <a href="https://vuepress.vuejs.org" target="_blank">VuePress</a> &
         <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank">Gungnir</a>
         <br>
-        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0 License</a>
+        All posts are licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0 License</a>
         `
     },
     plugins: {
