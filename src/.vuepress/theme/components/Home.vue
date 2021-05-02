@@ -79,6 +79,24 @@ export default {
       tags: [],
       bgImageID: 0,
       unsplashImg: '',
+      searchTerms: [
+          'nature',
+          'water',
+          'sunset',
+          'dusk',
+          'space',
+          'moonlight',
+          'sea',
+          'universe',
+          'moon',
+          'sun',
+          'mars',
+          'earth',
+          'dawn',
+          'night',
+          'forest',
+          'flower'
+      ],
       headerOpacity: 1,
       descriptionID: 0
     };
@@ -126,7 +144,7 @@ export default {
     },
     getUnsplashImage() {
         // 获取重定向后的地址
-        axios.get('https://source.unsplash.com/1600x900/?nature,water,sunset,dusk,space,moonlight').then(({ request }) => {
+        axios.get(`https://source.unsplash.com/1600x900/?${this.searchTerms.join(',')}`).then(({ request }) => {
             this.unsplashImg = request.responseURL;
             console.log('Image URL:', this.unsplashImg);
         }).catch(err => console.error(err));
