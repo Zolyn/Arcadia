@@ -1,6 +1,6 @@
 <template>
   <div class="home-blog">
-    <div class="hero" :style="{ 'background-image': bgImagePath }">
+    <div class="hero" :style="{ 'background-image': $themeConfig.homeHeaderImages[bgImageID] ? bgImagePath : `url('${unsplashImg}')` }">
       <div
         v-if="$themeConfig.homeHeaderImages[bgImageID] && $themeConfig.homeHeaderImages[bgImageID].mask"
         class="header-mask"
@@ -78,26 +78,16 @@ export default {
       currentPage: 1,
       tags: [],
       bgImageID: 0,
+      unsplashImg: 'https://source.unsplash.com/1600x900/?nature,water,sunset,dusk,space,moonlight',
       headerOpacity: 1,
       descriptionID: 0
     };
   },
   computed: {
     bgImagePath() {
-      if (this.$themeConfig.homeHeaderImages[this.bgImageID]) {
-        const bgPath = `url(${this.$withBase(
+      return `url(${this.$withBase(
           this.$themeConfig.homeHeaderImages[this.bgImageID].path
-        )})`;
-        return bgPath;
-      } else {
-        let bgURL = 'https://source.unsplash.com/1600x900/?nature,water,sunset,dusk,space,moonlight';
-        // 获取重定向后的地址，如果获取失败则改为API地址
-        axios.get('https://source.unsplash.com/1600x900/?nature,water,sunset,dusk,space,moonlight').then(({ request }) => {
-            bgURL = request.responseURL;
-            console.log('Image URL:', bgURL);
-        }).catch(err => console.error(err));
-        return `url(${bgURL})`;
-      }
+      )})`
     },
     heroHeight() {
       return document.querySelector(".hero").clientHeight;
@@ -113,7 +103,7 @@ export default {
       Math.random() * this.$themeConfig.personalInfo.description.length
     );
 
-    axios.get('https://v1.hitokoto.cn').then(resp => {
+    axios.get('https://v1.hitokoto.cn').then(data => {
         const hitokoto = this.$refs.hitokoto;
         hitokoto.innerText = data.hitokoto;
     }).catch(err => console.error(err));
@@ -130,8 +120,15 @@ export default {
           const len = this.$themeConfig.homeHeaderImages.length;
           this.bgImageID = (this.bgImageID + n + len) % len;
       } else {
-          this.bgImageID = Math.floor(Math.random() * 100) + 'unsplash';
+          this.getUnsplashImage();
       }
+    },
+    getUnsplashImage() {
+        // 获取重定向后的地址，如果获取失败则默认为API地址
+        axios.get('https://source.unsplash.com/1600x900/?nature,water,sunset,dusk,space,moonlight').then(({ request }) => {
+            this.unsplashImg = request.responseURL;
+            console.log('Image URL:', this.unsplashImg);
+        }).catch(err => console.error(err));
     },
     scrollToPost() {
       window.scrollTo({
