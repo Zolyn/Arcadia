@@ -103,10 +103,12 @@ module.exports = {
         },
         hitokoto: true,
         footer: `
-        &copy;<a href="https://github.com/Zolyn" target="_blank">Zolyn</a> 💖 2020-2021
+        &copy;<a href="https://github.com/Zolyn" target="_blank"> Zolyn</a> 💖 2020-2021
         <br>
         Powered by <a href="https://vuepress.vuejs.org" target="_blank">VuePress</a> &
         <a href="https://github.com/Renovamen/vuepress-theme-gungnir" target="_blank">Gungnir</a>
+        <br>
+        <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0 License</a>
         `
     },
     plugins: {
