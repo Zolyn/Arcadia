@@ -2,6 +2,13 @@
 title: 安装
 date: 2021-05-01
 ---
+::: tip 使用须知
+在使用本插件前，你需要知晓以下几点：
+- 配置本插件需要一定的JS，Vue基础知识
+- 插件使用了Vuetify组件库，该组件库使用了CSS重置，会对博客原主题的样式造成一定的影响，我已删除一些影响较大的样式规则来让样式的影响最小化
+- 如果你发现插件携带的样式规则对你的主题样式造成了一定影响（博客观感影响明显等），请在 [Issue](https://github.com/Zolyn/vuepress-plugin-rightmenu/issues) 中反馈，我会尽量去修复这个问题
+:::
+
 你可以使用npm, yarn, pnpm等包管理器安装插件，我推荐使用 [yarn](https://yarnpkg.com/) 或 [pnpm](https://pnpm.io)
 
 <code-group>

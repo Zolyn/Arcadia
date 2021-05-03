@@ -83,38 +83,36 @@ config: resolve(__dirname, './rightmenu.js')
 - 类型：`Object[]`
 
 ::: details 默认值
-~~~
 ```js
-            [
-                {
-                    icon: 'mdi-arrow-left',
-                    handler() {
-                        this.$router.go(-1);
-                    },
-                },
-                {
-                    icon: 'mdi-refresh',
-                    handler() {
-                        window.location.reload();
-                    },
-                },
-                {
-                    icon: 'mdi-home',
-                    handler() {
-                        if (this.$route.path !== '/') {
-                            this.$router.push('/');
-                        }
-                    },
-                },
-                {
-                    icon: 'mdi-arrow-right',
-                    handler() {
-                        this.$router.go(1);
-                    },
-                },
-            ]
+iconBar: [
+    {
+        icon: 'mdi-arrow-left',
+        handler() {
+            this.$router.go(-1);
+        },
+    },
+    {
+        icon: 'mdi-refresh',
+        handler() {
+            window.location.reload();
+        },
+    },
+    {
+        icon: 'mdi-home',
+        handler() {
+            if (this.$route.path !== '/') {
+                this.$router.push('/');
+            }
+        },
+    },
+    {
+        icon: 'mdi-arrow-right',
+        handler() {
+            this.$router.go(1);
+        },
+    },
+]
 ```
-~~~  
 :::
 
 图标栏配置，类型是一个包含对象的数组
@@ -137,24 +135,22 @@ config: resolve(__dirname, './rightmenu.js')
 - 类型：`Object[]`
 
 ::: details 默认值
-~~~
 ```js
-            [
-                {
-                    title: 'Default 1',
-                },
-                {
-                    title: 'Default 2',
-                },
-                {
-                    title: 'Default 3',
-                },
-                {
-                    title: 'Default 4',
-                },
-            ]
+normalActions: [
+    {
+        title: 'Default 1',
+    },
+    {
+        title: 'Default 2',
+    },
+    {
+        title: 'Default 3',
+    },
+    {
+        title: 'Default 4',
+    },
+]
 ```
-~~~
 :::
 
 默认菜单栏
@@ -173,46 +169,44 @@ config: resolve(__dirname, './rightmenu.js')
 - 类型：`Object<Object[]>`
 
 ::: details 默认值
-~~~
 ```js
-            {
-                link: [
-                    {
-                        title: 'Open in new tab',
-                        handler() {
-                            window.open(this.currentLink);
-                        },
-                    },
-                    {
-                        title: 'Copy link',
-                        handler() {
-                            this.clipboard = this.currentLink;
-                            this.$nextTick(() => {
-                                this.copy();
-                            });
-                        },
-                    },
-                ],
-                image: [
-                    {
-                        title: 'Open image in new tab',
-                        handler() {
-                            window.open(this.currentImage);
-                        },
-                    },
-                    {
-                        title: 'Copy image URL',
-                        handler() {
-                            this.clipboard = this.currentImage;
-                            this.$nextTick(() => {
-                                this.copy();
-                            });
-                        },
-                    },
-                ],
-            }
+eventActions: {
+    link: [
+        {
+            title: 'Open in new tab',
+            handler() {
+                window.open(this.currentLink);
+            },
+        },
+        {
+            title: 'Copy link',
+            handler() {
+                this.clipboard = this.currentLink;
+                this.$nextTick(() => {
+                    this.copy();
+                });
+            },
+        },
+    ],
+    image: [
+        {
+            title: 'Open image in new tab',
+            handler() {
+                window.open(this.currentImage);
+            },
+        },
+        {
+            title: 'Copy image URL',
+            handler() {
+                this.clipboard = this.currentImage;
+                this.$nextTick(() => {
+                    this.copy();
+                });
+            },
+        },
+    ]
+}
 ```
-~~~
 :::
 
 对点击的特定元素显示相应的菜单栏的配置，类型是一个包含多个对象数组的对象
@@ -230,10 +224,33 @@ config: resolve(__dirname, './rightmenu.js')
 ## stickyActions
 - 类型：`Object[]`
 
+::: details 默认值
+```js
+stickyActions: [
+    {
+        title: 'Switch mode',
+        handler() {
+            this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+            if (this.$vuetify.theme.dark) {
+                document.body.setAttribute('data-theme', 'dark');
+                localStorage.setItem('mode', 'dark');
+            } else {
+                document.body.setAttribute('data-theme', 'light');
+                localStorage.setItem('mode', 'light');
+            }
+        },
+    },
+]
+```
+:::
+
 常驻菜单栏配置
 
 ::: tip
 `eventActions.link`，`eventActions.image`和`stickyActions`的配置与`normalActions`一致，故不多做赘述
 :::
 
+这些便是插件的全部配置了~
+
+## 脚注
 [^computed]: 详情见 [全局计算属性](https://v1.vuepress.vuejs.org/zh/guide/global-computed.html#site) 和 [网站和页面的元数据](https://v1.vuepress.vuejs.org/zh/theme/writing-a-theme.html#%E7%BD%91%E7%AB%99%E5%92%8C%E9%A1%B5%E9%9D%A2%E7%9A%84%E5%85%83%E6%95%B0%E6%8D%AE)

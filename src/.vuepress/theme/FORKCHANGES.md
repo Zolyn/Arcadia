@@ -29,5 +29,8 @@
 - styles/code.styl  
   1. 适配插件 @mr-hope/vuepress-plugin-copy-code ，全屏代码块下隐藏复制按钮
 
+- styles/custom-blocks.styl
+  1. 修复其他样式覆盖造成的图标错位问题
+
 - package.json
   1. 增加axios依赖
