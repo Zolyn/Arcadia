@@ -72,7 +72,7 @@ module.exports = {
                 link: '/tags/'
             },
             {
-                text: '友链',
+                text: '链接',
                 icon: 'ri-links-fill',
                 link: '/links/'
             },
@@ -121,7 +121,7 @@ module.exports = {
                 }
             },
             links: {
-                subtitle: '诶嘿，这里是友链页~',
+                subtitle: '诶嘿，这里是链接页~',
                 bgImage: {
                     path: 'https://static.monknow.com/newtab/wallpaper/c44de9f778cfd4b199c77558edc4c368.jpg'
                 }

@@ -8,7 +8,7 @@ module.exports = {
         },
         {
             title: '好康的',
-            handler: function () {
+            handler() {
                 window.open('https://www.bilibili.com/video/BV1uT4y1P7CX');
             }
         }
