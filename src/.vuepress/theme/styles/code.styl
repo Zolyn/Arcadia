@@ -1,3 +1,8 @@
+/*
+原项目：https://github.com/Renovamen/vuepress-theme-gungnir
+协议：Apache License 2.0
+修改内容： 适配插件 @mr-hope/vuepress-plugin-copy-code ，全屏代码块下隐藏复制按钮
+ */
 .content__default
   :not(pre) > code
     color var(--inline-code-text)
@@ -45,6 +50,8 @@
       -webkit-animation elastic .6s
       .highlight-lines
         padding-top 3.95rem
+      .copy-code-button
+        display none
     .highlight-lines
       padding-top 3.05rem
 

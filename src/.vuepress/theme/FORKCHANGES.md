@@ -5,7 +5,7 @@
 
 - enhanceApp.js
   1. 增加图标，更改图标组件名称，防止与Vuetify组件库冲突
-  
+
 - components/SNS.vue
   1. 修改邮件图标
 
@@ -21,12 +21,13 @@
   1. 适配插件 @mr-hope/vuepress-plugin-copy-code，修改复制按钮的显示层级
   2. 适配插件 @zolyn/vuepress-plugin-waline 的评论样式
   3. 修改评论在文章和文档下的样式
+  4. 修改页面宽度在959px之内的评论样式
 
 - styles/mode.styl
-  1. 适配插件 @mr-hope/vuepress-plugin-copy-code，@mr-hope/vuepress-plugin-pwa 和 @zolyn/vuepress-plugin-rightmenu 修改组件和评论样式  
+  1. 适配插件 @mr-hope/vuepress-plugin-copy-code 和 @mr-hope/vuepress-plugin-pwa，修改组件样式
 
-- styles/palette.styl
-  1. 适配插件 @zolyn/vuepress-plugin-rightmenu，修改评论样式
+- styles/code.styl  
+  1. 适配插件 @mr-hope/vuepress-plugin-copy-code ，全屏代码块下隐藏复制按钮
 
 - package.json
   1. 增加axios依赖
