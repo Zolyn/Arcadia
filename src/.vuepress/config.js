@@ -69,12 +69,12 @@ module.exports = {
             {
                 text: '标签',
                 icon: 'bi-tag-fill',
-                link: '/tags'
+                link: '/tags/'
             },
             {
                 text: '友链',
                 icon: 'ri-links-fill',
-                link: '/links'
+                link: '/links/'
             },
             {
                 text: '文档',
@@ -82,21 +82,22 @@ module.exports = {
                 items: [
                     {
                         text: 'vuepress-plugin-rightmenu',
-                        link: '/docs/vuepress-rightmenu'
+                        link: '/docs/vuepress-plugin-rightmenu/'
                     },
                     {
                         text: 'spider-manga',
-                        link: '/docs/spider-manga',
+                        link: '/docs/spider-manga/',
                     },
                     {
                         text: 'spider-checkupdate',
-                        link: '/docs/spider-checkupdate',
+                        link: '/docs/spider-checkupdate/',
                     },
                 ]
             },
             {
                 text: '关于',
-                link: '/about'
+                icon: 'bi-person-circle',
+                link: '/about/'
             }
         ],
         sidebar: {
@@ -120,7 +121,7 @@ module.exports = {
                 }
             },
             links: {
-                subtitle: '诶嘿，这里是链接页~',
+                subtitle: '诶嘿，这里是友链页~',
                 bgImage: {
                     path: 'https://static.monknow.com/newtab/wallpaper/c44de9f778cfd4b199c77558edc4c368.jpg'
                 }
