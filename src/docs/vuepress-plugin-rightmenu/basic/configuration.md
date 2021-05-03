@@ -56,15 +56,15 @@ module.exports = {
 const { resolve } = require('path');
 
 module.exports = {
-plugins: [
-[
-'@zolyn/rightmenu',
-{
-// 配置文件路径
-config: resolve(__dirname, './rightmenu.js')
-}
-]
-]
+    plugins: [
+        [
+            '@zolyn/rightmenu',
+            {
+                // 配置文件路径
+                config: resolve(__dirname, './rightmenu.js')
+            }
+        ]
+    ]
 }
 ```
 </code-block>
@@ -76,7 +76,7 @@ config: resolve(__dirname, './rightmenu.js')
 
 如果你要配置插件的某个选项，请把这个选项的所有子选项都写上，否则将会出现**错误**
 
-例子：你可以不配置`iconBar`选项，插件会使用默认的配置，如果你配置了`iconBar`选项，请把它的所有子选项（`icon`和`handler`选项）都写上
+例如：你可以不配置`iconBar`选项，插件会使用默认的配置，如果你配置了`iconBar`选项，请把它的所有子选项（`icon`和`handler`选项）都写上
 :::
 
 ## iconBar
@@ -84,34 +84,36 @@ config: resolve(__dirname, './rightmenu.js')
 
 ::: details 默认值
 ```js
-iconBar: [
-    {
-        icon: 'mdi-arrow-left',
-        handler() {
-            this.$router.go(-1);
+module.exports = {
+    iconBar: [
+        {
+            icon: 'mdi-arrow-left',
+            handler() {
+                this.$router.go(-1);
+            },
         },
-    },
-    {
-        icon: 'mdi-refresh',
-        handler() {
-            window.location.reload();
+        {
+            icon: 'mdi-refresh',
+            handler() {
+                window.location.reload();
+            },
         },
-    },
-    {
-        icon: 'mdi-home',
-        handler() {
-            if (this.$route.path !== '/') {
-                this.$router.push('/');
-            }
+        {
+            icon: 'mdi-home',
+            handler() {
+                if (this.$route.path !== '/') {
+                    this.$router.push('/');
+                }
+            },
         },
-    },
-    {
-        icon: 'mdi-arrow-right',
-        handler() {
-            this.$router.go(1);
+        {
+            icon: 'mdi-arrow-right',
+            handler() {
+                this.$router.go(1);
+            },
         },
-    },
-]
+    ]
+}
 ```
 :::
 
@@ -128,7 +130,7 @@ iconBar: [
 图标点击回调函数
 
 ::: tip 关于回调函数
-插件使用`Function.prototype.call()`方法来执行回调函数，所以你在函数里使用的`this`，它会被绑定到组件实例上 ，因此你可以用`this`来访问Vuepress的全局计算属性[^computed] 或其他数据
+插件使用`Function.prototype.call()`方法来执行回调函数，所以你在函数里使用的`this`会被绑定到组件实例上 ，因此你可以用`this`来访问Vuepress的全局计算属性[^computed] 或其他数据
 :::
 
 ## normalActions
@@ -136,20 +138,22 @@ iconBar: [
 
 ::: details 默认值
 ```js
-normalActions: [
-    {
-        title: 'Default 1',
-    },
-    {
-        title: 'Default 2',
-    },
-    {
-        title: 'Default 3',
-    },
-    {
-        title: 'Default 4',
-    },
-]
+module.exports = {
+    normalActions: [
+        {
+            title: 'Default 1',
+        },
+        {
+            title: 'Default 2',
+        },
+        {
+            title: 'Default 3',
+        },
+        {
+            title: 'Default 4',
+        },
+    ]
+}
 ```
 :::
 
@@ -170,41 +174,43 @@ normalActions: [
 
 ::: details 默认值
 ```js
-eventActions: {
-    link: [
-        {
-            title: 'Open in new tab',
-            handler() {
-                window.open(this.currentLink);
+module.exports = {
+    eventActions: {
+        link: [
+            {
+                title: 'Open in new tab',
+                handler() {
+                    window.open(this.currentLink);
+                },
             },
-        },
-        {
-            title: 'Copy link',
-            handler() {
-                this.clipboard = this.currentLink;
-                this.$nextTick(() => {
-                    this.copy();
-                });
+            {
+                title: 'Copy link',
+                handler() {
+                    this.clipboard = this.currentLink;
+                    this.$nextTick(() => {
+                        this.copy();
+                    });
+                },
             },
-        },
-    ],
-    image: [
-        {
-            title: 'Open image in new tab',
-            handler() {
-                window.open(this.currentImage);
+        ],
+        image: [
+            {
+                title: 'Open image in new tab',
+                handler() {
+                    window.open(this.currentImage);
+                },
             },
-        },
-        {
-            title: 'Copy image URL',
-            handler() {
-                this.clipboard = this.currentImage;
-                this.$nextTick(() => {
-                    this.copy();
-                });
+            {
+                title: 'Copy image URL',
+                handler() {
+                    this.clipboard = this.currentImage;
+                    this.$nextTick(() => {
+                        this.copy();
+                    });
+                },
             },
-        },
-    ]
+        ]
+    }
 }
 ```
 :::
@@ -226,21 +232,23 @@ eventActions: {
 
 ::: details 默认值
 ```js
-stickyActions: [
-    {
-        title: 'Switch mode',
-        handler() {
-            this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
-            if (this.$vuetify.theme.dark) {
-                document.body.setAttribute('data-theme', 'dark');
-                localStorage.setItem('mode', 'dark');
-            } else {
-                document.body.setAttribute('data-theme', 'light');
-                localStorage.setItem('mode', 'light');
-            }
+module.exports = {
+    stickyActions: [
+        {
+            title: 'Switch mode',
+            handler() {
+                this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
+                if (this.$vuetify.theme.dark) {
+                    document.body.setAttribute('data-theme', 'dark');
+                    localStorage.setItem('mode', 'dark');
+                } else {
+                    document.body.setAttribute('data-theme', 'light');
+                    localStorage.setItem('mode', 'light');
+                }
+            },
         },
-    },
-]
+    ]
+}
 ```
 :::
 

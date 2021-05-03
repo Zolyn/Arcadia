@@ -34,7 +34,7 @@ pnpm add -D @zolyn/vuepress-plugin-rightmenu
 安装完成后，在vuepress的配置文件中添加如下代码
 
 <code-group>
-<code-block title="对象式" active>
+<code-block title="对象式">
 ```js {6-9}
 // .vuepress/config.js
 const { resolve } = require('path');
@@ -73,7 +73,7 @@ module.exports = {
 你也可以直接使用插件的默认设置
 
 <code-group>
-<code-block title="对象式" active>
+<code-block title="对象式">
 ```js {4}
 // .vuepress/config.js
 module.exports = {
