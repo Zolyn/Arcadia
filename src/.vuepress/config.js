@@ -108,6 +108,7 @@ module.exports = {
                     children: [
                         '',
                         'basic/installation',
+                        'basic/behavior',
                         'basic/configuration'
                     ]
                 },
