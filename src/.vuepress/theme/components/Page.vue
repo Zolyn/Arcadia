@@ -207,10 +207,10 @@ export default {
 @media (max-width: $MQNarrow)
   .page
     margin-left $mobileSidebarWidth
+  // 页面宽度在959px之内，统一评论样式
   #comment-wrapper
-    margin-top var(--comment-margin-top)
-    margin-left 5%
-    margin-right 5%
+    margin-left 5% !important
+    margin-right 5% !important
 
 @media (max-width: $MQMobile)
   .page
