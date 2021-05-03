@@ -151,7 +151,8 @@ module.exports = {
                 debug: true
             },
             comment: {
-                serverURL: 'https://blog-comment.zorinchan.icu'
+                serverURL: 'https://blog-comment.zorinchan.icu',
+                parentNode: '.theme-content'
             }
         },
         '@zolyn/rightmenu': {

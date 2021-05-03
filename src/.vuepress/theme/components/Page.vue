@@ -115,12 +115,14 @@ export default {
 
   mounted() {
     this.addCodeBtn();
-    this.$nextTick(() => {
-        // 如果页面是文档，修改评论样式
-        if (document.querySelector('.doc-header')) {
-            document.documentElement.style.setProperty('--comment-margin', '10rem 10% 0');
-        }
-    });
+    // this.$nextTick(() => {
+    //     // 如果页面是文档，修改评论样式
+    //     if (document.querySelector('.doc-header')) {
+    //         document.documentElement.style.setProperty('--comment-margin', '1em 10% 0');
+    //     } else {
+    //         document.documentElement.style.setProperty('--comment-margin', '10em 5% 0');
+    //     }
+    // });
   },
   methods: {
     addCodeBtn() {
@@ -187,8 +189,8 @@ export default {
     @extend $wrapper
     padding 2rem 0
     margin-top 3rem
-  #comment-wrapper
-    margin $CommentMargin
+  //#comment-wrapper
+  //  margin var(--comment-margin)
 
 .theme-content div[class*="language-"] .copy-code-button
     z-index 1
