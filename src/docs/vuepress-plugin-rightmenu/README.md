@@ -22,7 +22,7 @@ vuepress-plugin-rightmenu 是一个适用于[Vuepress](https://v1.vuepress.vuejs
 </div>
 <div class="pure-u pure-gutter">
 <a href="https://github.com/Zolyn/vuepress-plugin-rightmenu" target="_blank">
-<img alt="npm" src="https://img.shields.io/github/license/Zolyn/vuepress-plugin-rightmenu?style=flat-square"/>
+<img alt="license" src="https://img.shields.io/github/license/Zolyn/vuepress-plugin-rightmenu?style=flat-square"/>
 </a>
 </div>
 <style>
@@ -43,7 +43,7 @@ padding: 2px
 :::
 
 ## 演示站点
-[Arcadia](https://blog.zorinchan.icu)
+[Arcadia](https://blog.zorinchan.icu) (我的博客)
 
 ## 设计初衷
 前一段时间我被Hexo主题 [Volantis](https://github.com/volantis-x/hexo-theme-volantis) 的右键菜单惊艳到了，于是就参考该主题的右键菜单源码和其他网上的例子进行开发

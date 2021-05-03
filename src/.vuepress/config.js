@@ -110,6 +110,13 @@ module.exports = {
                         'basic/installation',
                         'basic/configuration'
                     ]
+                },
+                {
+                    title: '开发',
+                    collapsable: false,
+                    children: [
+                        'develop/todo'
+                    ]
                 }
             ]
         },
