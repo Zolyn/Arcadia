@@ -115,6 +115,12 @@ export default {
 
   mounted() {
     this.addCodeBtn();
+    this.$nextTick(() => {
+        // 如果页面是文档，修改评论样式
+        if (document.querySelector('.doc-header')) {
+            document.documentElement.style.setProperty('--comment-margin', '10rem 10% 0');
+        }
+    });
   },
   methods: {
     addCodeBtn() {
@@ -158,6 +164,7 @@ export default {
 修改内容：
     1. 适配插件 @mr-hope/vuepress-plugin-copy-code，修改复制按钮的显示层级
     2. 适配插件 @zolyn/vuepress-plugin-waline 的评论样式
+    3. 修改评论在文章和文档下的样式
  */
 @require '../styles/wrapper.styl'
 @require '../styles/mixins.styl'
@@ -181,7 +188,7 @@ export default {
     padding 2rem 0
     margin-top 3rem
   #comment-wrapper
-    margin 10rem 5% 0
+    margin $CommentMargin
 
 .theme-content div[class*="language-"] .copy-code-button
     z-index 1

@@ -20,9 +20,13 @@
 - components/Page.vue
   1. 适配插件 @mr-hope/vuepress-plugin-copy-code，修改复制按钮的显示层级
   2. 适配插件 @zolyn/vuepress-plugin-waline 的评论样式
+  3. 修改评论在文章和文档下的样式
 
 - styles/mode.styl
-  1. 适配插件 @mr-hope/vuepress-plugin-copy-code 和 @mr-hope/vuepress-plugin-pwa，修改组件样式  
+  1. 适配插件 @mr-hope/vuepress-plugin-copy-code，@mr-hope/vuepress-plugin-pwa 和 @zolyn/vuepress-plugin-rightmenu 修改组件和评论样式  
+
+- styles/palette.styl
+  1. 适配插件 @zolyn/vuepress-plugin-rightmenu，修改评论样式
 
 - package.json
   1. 增加axios依赖
