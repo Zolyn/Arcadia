@@ -118,9 +118,11 @@ export default {
     this.$nextTick(() => {
         // 如果页面是文档，修改评论样式
         if (document.querySelector('.doc-header')) {
-            document.documentElement.style.setProperty('--comment-margin', '1em 10% 0');
+            document.documentElement.style.setProperty('--comment-margin-top', '3em');
+            document.documentElement.style.setProperty('--comment-margin-lr', '12%');
         } else {
-            document.documentElement.style.setProperty('--comment-margin', '10em 5% 0');
+            document.documentElement.style.setProperty('--comment-margin-top', '10em');
+            document.documentElement.style.setProperty('--comment-margin-lr', '5%');
         }
     });
   },
@@ -190,7 +192,9 @@ export default {
     padding 2rem 0
     margin-top 3rem
   #comment-wrapper
-    margin var(--comment-margin)
+    margin-top var(--comment-margin-top)
+    margin-left var(--comment-margin-lr)
+    margin-right var(--comment-margin-lr)
 
 .theme-content div[class*="language-"] .copy-code-button
     z-index 1
@@ -203,6 +207,10 @@ export default {
 @media (max-width: $MQNarrow)
   .page
     margin-left $mobileSidebarWidth
+  #comment-wrapper
+    margin-top var(--comment-margin-top)
+    margin-left 5%
+    margin-right 5%
 
 @media (max-width: $MQMobile)
   .page
