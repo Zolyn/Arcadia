@@ -148,8 +148,7 @@ module.exports = {
         },
         '@zolyn/waline': {
             plugin: {
-                debug: true,
-                parentNode: '.theme-content'
+                debug: true
             },
             comment: {
                 serverURL: 'https://blog-comment.zorinchan.icu',
