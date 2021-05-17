@@ -20,7 +20,7 @@
     "moment": "2.29.1",
     "vuepress": "1.8.2",
     "vuepress-plugin-md-enhance": "1.16.0",
-    "vuepress-plugin-photo-swipe": "1.16.0",
+    "vuepress-plugin-photo-swipe": "1.17.0",
     "vuepress-theme-gungnir": "0.1.7"
   }
 }
