@@ -159,6 +159,7 @@ module.exports = {
                 debug: true
             },
             comment: {
+                el: '#comment-wrapper',
                 serverURL: 'https://blog-comment.zorinchan.icu',
             }
         },
