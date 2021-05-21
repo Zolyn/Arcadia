@@ -161,6 +161,7 @@ module.exports = {
             comment: {
                 el: '#comment-wrapper',
                 serverURL: 'https://blog-comment.zorinchan.icu',
+                dark: 'body[data-theme="dark"]'
             }
         },
         '@zolyn/rightmenu': {
