@@ -166,12 +166,14 @@ module.exports = {
             config: resolve(__dirname, './rightmenu.js')
         },
         'bbtalk': {
-            plugin:{},
+            plugin: {
+                debug: true
+            },
             bbtalk: {
                 el: '#bb-container',
                 appId: 'WMBurIyzzk8G2p4NXePaU4ST-MdYXbMMI',
                 appKey: 'TR9l0MkO7qitrFh1zd9PvycR',
-                serverURLs: 'wmburiyz.api.lncldglobal.com'
+                serverURLs: 'https://wmburiyz.api.lncldglobal.com'
             }
         },
         'md-enhance': {
