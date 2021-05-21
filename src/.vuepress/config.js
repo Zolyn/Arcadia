@@ -166,6 +166,7 @@ module.exports = {
             config: resolve(__dirname, './rightmenu.js')
         },
         'bbtalk': {
+            plugin:{},
             bbtalk: {
                 el: '#bb-container',
                 appId: 'WMBurIyzzk8G2p4NXePaU4ST-MdYXbMMI',
