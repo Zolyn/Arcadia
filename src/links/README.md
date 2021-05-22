@@ -1,6 +1,5 @@
 ---
 layout: Links
-title: 友链
 links:
   - title: 博客
     items:

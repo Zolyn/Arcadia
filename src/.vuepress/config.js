@@ -133,6 +133,12 @@ module.exports = {
                 bgImage: {
                     path: 'https://static.monknow.com/newtab/wallpaper/c44de9f778cfd4b199c77558edc4c368.jpg'
                 }
+            },
+            bb: {
+                subtitle: '记录生活琐事',
+                bgImage: {
+                    path: 'https://static.monknow.com/newtab/wallpaper/c44de9f778cfd4b199c77558edc4c368.jpg'
+                }
             }
         },
         readingTime: {
@@ -169,6 +175,7 @@ module.exports = {
         },
         'bbtalk': {
             plugin: {
+                parentNode: '.bb-wrapper',
                 debug: true
             },
             bbtalk: {

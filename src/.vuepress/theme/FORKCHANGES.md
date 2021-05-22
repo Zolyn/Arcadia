@@ -32,5 +32,8 @@
 - styles/custom-blocks.styl
   1. 修复其他样式覆盖造成的图标错位问题
 
+- layouts/BB.vue
+  1. 增加哔哔页面，写法参考自 Links.vue 和 Tags.vue
+
 - package.json
   1. 增加axios依赖
