@@ -153,8 +153,7 @@ export default {
     },
     checkBtn(block) {
       return Object.values(block.children).find((value) => {
-        if (value.classList.contains("code-button")) return true;
-        return false;
+        return value.classList.contains("code-button");
       });
     }
   }
@@ -191,7 +190,7 @@ export default {
     @extend $wrapper
     padding 2rem 0
     margin-top 3rem
-  #comment-wrapper
+  .comment-wrapper
     margin-top var(--comment-margin-top)
     margin-left var(--comment-margin-lr)
     margin-right var(--comment-margin-lr)
@@ -208,7 +207,7 @@ export default {
   .page
     margin-left $mobileSidebarWidth
   // 页面宽度在959px之内，统一评论样式
-  #comment-wrapper
+  .comment-wrapper
     margin-left 5% !important
     margin-right 5% !important
 
