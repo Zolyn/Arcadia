@@ -28,6 +28,11 @@
 </template>
 
 <script>
+/*
+原项目：https://github.com/Renovamen/vuepress-theme-gungnir
+协议：Apache License 2.0
+修改内容： 修改navbar反色规则，适配哔哔页面
+ */
 import NavLinks from "@theme/components/NavLinks";
 
 export default {
@@ -119,7 +124,11 @@ export default {
         // links page with header image
         (this.$page.frontmatter.layout == "Links" &&
           this.$themeConfig.pages.links &&
-          this.$themeConfig.pages.links.bgImage)
+          this.$themeConfig.pages.links.bgImage) ||
+        // BB page with header image
+        (this.$page.frontmatter.layout == "BB" &&
+          this.$themeConfig.pages.bb &&
+          this.$themeConfig.pages.bb.bgImage)
       )
         this.isInvert = false;
       else this.isInvert = true;

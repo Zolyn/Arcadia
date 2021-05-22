@@ -30,8 +30,6 @@ export default {
 </script>
 
 <style lang="stylus">
-@require '../styles/mixins.styl'
-
 .bb-wrapper
     max-width 760px
     margin 0 auto

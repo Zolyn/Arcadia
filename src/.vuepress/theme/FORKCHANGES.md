@@ -35,5 +35,8 @@
 - layouts/BB.vue
   1. 增加哔哔页面，写法参考自 Links.vue 和 Tags.vue
 
+- components/Navbar.vue
+  1. 修改navbar反色规则，适配哔哔页面
+
 - package.json
   1. 增加axios依赖
