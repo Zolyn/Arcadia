@@ -1,4 +1,6 @@
 module.exports = {
+    transition: 'y',
+    dense: true,
     normalActions: [
         {
             title: '博客源码',
@@ -51,6 +53,7 @@ module.exports = {
     },
     stickyActions: [
         {
+            icon: 'mdi-weather-night',
             title: '切换主题',
             handler: function () {
                 this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
