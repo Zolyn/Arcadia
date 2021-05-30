@@ -10,6 +10,7 @@ import { registerCodeThemeCss, registerLinks } from "@theme/utils/other";
 import OhVueIcon from "oh-vue-icons";
 
 import {
+  RiMessage2Fill,
   BiPersonCircle,
   RiHomeWifiFill,
   BiTagFill,
@@ -44,6 +45,7 @@ import {
 } from "oh-vue-icons/icons";
 
 OhVueIcon.add(
+  RiMessage2Fill,
   BiPersonCircle,
   RiHomeWifiFill,
   BiTagFill,

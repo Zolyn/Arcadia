@@ -77,20 +77,21 @@ module.exports = {
                 link: '/links/'
             },
             {
+                text: '哔哔',
+                icon: 'ri-message-2-fill',
+                link: '/bb/'
+            },
+            {
                 text: '文档',
                 icon: 'ri-book-2-fill',
                 items: [
                     {
+                        text: 'Photinia',
+                        link: '/docs/photinia/',
+                    },
+                    {
                         text: 'vuepress-plugin-rightmenu',
                         link: '/docs/vuepress-plugin-rightmenu/'
-                    },
-                    {
-                        text: 'spider-manga',
-                        link: '/docs/spider-manga/',
-                    },
-                    {
-                        text: 'spider-checkupdate',
-                        link: '/docs/spider-checkupdate/',
                     },
                 ]
             },
@@ -117,6 +118,16 @@ module.exports = {
                     collapsable: false,
                     children: [
                         'develop/todo'
+                    ]
+                }
+            ],
+            '/docs/photinia/': [
+                {
+                    title: '基础',
+                    collapsable: false,
+                    children: [
+                        '',
+                        'basic/installation'
                     ]
                 }
             ]
