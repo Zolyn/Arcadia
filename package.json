@@ -12,8 +12,8 @@
     "dev": "vuepress dev src"
   },
   "devDependencies": {
-    "@mr-hope/vuepress-plugin-copy-code": "1.17.0",
-    "@mr-hope/vuepress-plugin-pwa": "1.17.2",
+    "@mr-hope/vuepress-plugin-copy-code": "1.18.0",
+    "@mr-hope/vuepress-plugin-pwa": "1.18.0",
     "@renovamen/vuepress-plugin-rss": "0.1.7",
     "@zolyn/vuepress-plugin-rightmenu": "1.1.0-beta.5",
     "@zolyn/vuepress-plugin-waline": "1.1.1",
@@ -21,8 +21,8 @@
     "moment": "2.29.1",
     "vuepress": "1.8.2",
     "vuepress-plugin-bbtalk": "1.0.0-rc.1",
-    "vuepress-plugin-md-enhance": "1.17.1",
-    "vuepress-plugin-photo-swipe": "1.17.2",
+    "vuepress-plugin-md-enhance": "1.18.0",
+    "vuepress-plugin-photo-swipe": "1.18.0",
     "vuepress-theme-gungnir": "0.1.7"
   },
   "dependencies": {
