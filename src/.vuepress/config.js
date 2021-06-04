@@ -167,92 +167,86 @@ module.exports = {
         All posts are licensed under the <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0 License</a>
         `
     },
-    // plugins: {
-    //     '@vuepress/last-updated': {
-    //         transformer: (timestamp) => moment(timestamp).add(8, 'h').format('YYYY-MM-DD HH:mm:ss A')
-    //     },
-    //     '@zolyn/waline': {
-    //         plugin: {
-    //             debug: true
-    //         },
-    //         comment: {
-    //             el: '#comment-wrapper',
-    //             serverURL: 'https://blog-comment.zorinchan.icu',
-    //             dark: 'body[data-theme="dark"]'
-    //         }
-    //     },
-    //     '@zolyn/rightmenu': {
-    //         config: resolve(__dirname, './rightmenu.js')
-    //     },
-    //     'bbtalk': {
-    //         plugin: {
-    //             parentNode: '.bb-wrapper',
-    //             debug: true
-    //         },
-    //         bbtalk: {
-    //             el: '#bb-container',
-    //             appId: 'WMBurIyzzk8G2p4NXePaU4ST-MdYXbMMI',
-    //             appKey: 'TR9l0MkO7qitrFh1zd9PvycR',
-    //             serverURLs: 'https://wmburiyz.api.lncldglobal.com'
-    //         }
-    //     },
-    //     'md-enhance': {
-    //         lineNumbers: false,
-    //         align: true,
-    //         sup: true,
-    //         sub: true,
-    //         footnote: true,
-    //         tasklist: true,
-    //     },
-    //     '@mr-hope/pwa': {
-    //         favicon: '/icon-192.png',
-    //         themeColor: '#377bb5',
-    //         cachePic: true,
-    //         maxSize: 2560,
-    //         maxPicSize: 2048,
-    //         manifest: {
-    //             icons: [
-    //                 {
-    //                     src: '/icon-192.png',
-    //                     sizes: '192x192',
-    //                     type: 'image/png'
-    //                 },
-    //                 {
-    //                     src: '/icon-512.png',
-    //                     sizes: '512x512',
-    //                     type: 'image/png'
-    //                 }
-    //             ]
-    //         },
-    //         apple: {
-    //             icon: '/icon-192.png',
-    //             maskIcon: '/icon-192.png'
-    //         },
-    //         msTile: {
-    //             image: '/icon-192.png'
-    //         }
-    //     },
-    //     'photo-swipe': {
-    //         container: '.theme-content',
-    //         selector: '.theme-content :not(a) > img'
-    //     },
-    //     '@mr-hope/copy-code': {
-    //         selector: '.theme-content div[class*="language-"] pre'
-    //     },
-    //     '@renovamen/rss': {
-    //         site_url: 'https://blog.zorinchan.icu',
-    //         copyright: 'Zorin 2020-2021',
-    //         count: 20
-    //     },
-    //
-    // }
-    plugins: [
-        ['@zolyn/withts',{ word: 'Withts test!' }],
-        // ['typescript', {
-        //     tsLoaderOptions: {
-        //         configFile: resolve(__dirname, '../../node_modules/@zolyn/vuepress-plugin-withts/tsconfig.esm.json')
-        //     }
-        // }]
-        'typescript'
-    ]
+    plugins: {
+        '@vuepress/last-updated': {
+            transformer: (timestamp) => moment(timestamp).add(8, 'h').format('YYYY-MM-DD HH:mm:ss A')
+        },
+        '@zolyn/waline': {
+            plugin: {
+                debug: true
+            },
+            comment: {
+                el: '#comment-wrapper',
+                serverURL: 'https://blog-comment.zorinchan.icu',
+                dark: 'body[data-theme="dark"]'
+            }
+        },
+        '@zolyn/rightmenu': {
+            config: resolve(__dirname, './rightmenu.js')
+        },
+        '@zolyn/withts': {
+            word: 'Withts test!'
+        },
+        'typescript': {},
+        'bbtalk': {
+            plugin: {
+                parentNode: '.bb-wrapper',
+                debug: true
+            },
+            bbtalk: {
+                el: '#bb-container',
+                appId: 'WMBurIyzzk8G2p4NXePaU4ST-MdYXbMMI',
+                appKey: 'TR9l0MkO7qitrFh1zd9PvycR',
+                serverURLs: 'https://wmburiyz.api.lncldglobal.com'
+            }
+        },
+        'md-enhance': {
+            lineNumbers: false,
+            align: true,
+            sup: true,
+            sub: true,
+            footnote: true,
+            tasklist: true,
+        },
+        '@mr-hope/pwa': {
+            favicon: '/icon-192.png',
+            themeColor: '#377bb5',
+            cachePic: true,
+            maxSize: 2560,
+            maxPicSize: 2048,
+            manifest: {
+                icons: [
+                    {
+                        src: '/icon-192.png',
+                        sizes: '192x192',
+                        type: 'image/png'
+                    },
+                    {
+                        src: '/icon-512.png',
+                        sizes: '512x512',
+                        type: 'image/png'
+                    }
+                ]
+            },
+            apple: {
+                icon: '/icon-192.png',
+                maskIcon: '/icon-192.png'
+            },
+            msTile: {
+                image: '/icon-192.png'
+            }
+        },
+        'photo-swipe': {
+            container: '.theme-content',
+            selector: '.theme-content :not(a) > img'
+        },
+        '@mr-hope/copy-code': {
+            selector: '.theme-content div[class*="language-"] pre'
+        },
+        '@renovamen/rss': {
+            site_url: 'https://blog.zorinchan.icu',
+            copyright: 'Zorin 2020-2021',
+            count: 20
+        },
+    }
 }
