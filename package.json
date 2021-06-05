@@ -17,7 +17,7 @@
     "@renovamen/vuepress-plugin-rss": "0.1.7",
     "@zolyn/vuepress-plugin-rightmenu": "1.1.0-beta.5",
     "@zolyn/vuepress-plugin-waline": "1.1.1",
-    "@zolyn/vuepress-plugin-withts": "1.1.0-beta.0",
+    "@zolyn/vuepress-plugin-withts": "1.1.0-beta.2",
     "moment": "2.29.1",
     "vuepress": "1.8.2",
     "vuepress-plugin-bbtalk": "1.0.0-rc.1",
