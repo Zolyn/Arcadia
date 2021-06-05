@@ -187,7 +187,7 @@ module.exports = {
         '@zolyn/withts': {
             word: 'Withts test!'
         },
-        'typescript': {},
+        '@zolyn/typescript': {},
         'bbtalk': {
             plugin: {
                 parentNode: '.bb-wrapper',
