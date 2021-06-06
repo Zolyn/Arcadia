@@ -17,16 +17,13 @@
     "@renovamen/vuepress-plugin-rss": "0.1.7",
     "@zolyn/vuepress-plugin-rightmenu": "1.1.0-beta.5",
     "@zolyn/vuepress-plugin-waline": "1.1.1",
-    "@zolyn/vuepress-plugin-typescript": "1.0.2",
-    "@zolyn/vuepress-plugin-withts": "1.1.0-beta.2",
+    "@zolyn/vuepress-plugin-typescript": "1.0.3",
     "moment": "2.29.1",
     "vuepress": "1.8.2",
     "vuepress-plugin-bbtalk": "1.0.0-rc.1",
     "vuepress-plugin-md-enhance": "1.18.0",
     "vuepress-plugin-photo-swipe": "1.18.0",
-    "vuepress-theme-gungnir": "0.1.7"
+    "vuepress-theme-gungnir": "0.1.7",
+    "typescript": "4.3.2"
   },
-  "dependencies": {
-    "typescript": "^4.3.2"
-  }
 }
