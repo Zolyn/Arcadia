@@ -1,5 +1,5 @@
 module.exports = {
-    transition: 'y',
+    transition: 'x',
     dense: true,
     normalActions: [
         {
@@ -19,16 +19,16 @@ module.exports = {
         link: [
             {
                 title: '在新标签页中打开链接',
-                handler: function () {
-                    window.open(this.currentLink);
+                handler: function (inst) {
+                    window.open(inst.currentLink);
                 },
             },
             {
                 title: '复制链接',
-                handler: function () {
-                    this.clipboard = this.currentLink;
-                    this.$nextTick(() => {
-                        this.copy();
+                handler: function (inst) {
+                    inst.clipboard = inst.currentLink;
+                    inst.$nextTick(() => {
+                        inst.copy();
                     });
                 },
             },
@@ -36,16 +36,16 @@ module.exports = {
         image: [
             {
                 title: '在新标签页中打开图像',
-                handler: function () {
-                    window.open(this.currentImage);
+                handler: function (inst) {
+                    window.open(inst.currentImage);
                 },
             },
             {
                 title: '复制图像链接',
-                handler: function () {
-                    this.clipboard = this.currentImage;
-                    this.$nextTick(() => {
-                        this.copy();
+                handler: function (inst) {
+                    inst.clipboard = inst.currentImage;
+                    inst.$nextTick(() => {
+                        inst.copy();
                     });
                 },
             },
@@ -55,9 +55,9 @@ module.exports = {
         {
             icon: 'mdi-weather-night',
             title: '切换主题',
-            handler: function () {
-                this.$vuetify.theme.dark = !this.$vuetify.theme.dark;
-                if (this.$vuetify.theme.dark) {
+            handler: function (inst) {
+                inst.$vuetify.theme.dark = !inst.$vuetify.theme.dark;
+                if (inst.$vuetify.theme.dark) {
                     document.body.setAttribute('data-theme', 'dark');
                     localStorage.setItem('mode', 'dark');
                 } else {

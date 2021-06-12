@@ -184,10 +184,6 @@ module.exports = {
         '@zolyn/rightmenu': {
             config: resolve(__dirname, './rightmenu.js')
         },
-        '@zolyn/withts': {
-            word: 'Withts test!'
-        },
-        '@zolyn/typescript': {},
         'bbtalk': {
             plugin: {
                 parentNode: '.bb-wrapper',
