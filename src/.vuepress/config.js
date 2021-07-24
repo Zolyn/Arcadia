@@ -130,6 +130,15 @@ module.exports = {
                         'basic/installation'
                     ]
                 }
+            ],
+            '/notes/dart/': [
+                {
+                    title: '基础',
+                    collapsable: false,
+                    children: [
+                        ''
+                    ]
+                }
             ]
         },
         pages: {
