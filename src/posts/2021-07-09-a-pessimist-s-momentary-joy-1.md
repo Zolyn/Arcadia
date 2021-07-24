@@ -4,10 +4,10 @@ title: 一个悲观主义者的短暂快乐（一）
 subtitle: 假期随便逛逛 ep.1
 date: 2021-07-09 22:00
 tags:
-- 生活
-  catalog: true
-  header_img: https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@2021.7.12-release.1/Arcadia/images/IMG_20210709_193326.jpg
-  header_style: image
+ - 生活
+catalog: true
+header_img: https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@2021.7.12-release.1/Arcadia/images/IMG_20210709_193326.jpg
+header_style: image
 ---
 千盼万盼，终于盼来了暑假，虽然说有一大堆的作业需要我去完成，还有一些新学期的知识需要我去预习，但我并不是一放假就拼命写作业的那种人，我喜欢给自己放几天假再进入正式的暑假生活中。
 
