@@ -2,7 +2,7 @@
 layout: post
 title: 一个悲观主义者的短暂快乐（一）
 subtitle: 假期随便逛逛 ep.1
-date: 2021-07-09 22:00
+date: 2021-07-09
 tags:
  - 生活
 catalog: true

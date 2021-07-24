@@ -2,7 +2,7 @@
 layout: post
 title: Inside主题进阶配置
 subtitle: 为主题添加一些常用功能
-date: 2020-07-24 00:09:44
+date: 2020-07-24
 tags:
  - 开发
  - hexo主题
