@@ -22,6 +22,6 @@
     "vuepress-plugin-bbtalk": "1.0.0-rc.1",
     "vuepress-plugin-md-enhance": "1.21.0",
     "vuepress-plugin-photo-swipe": "1.21.0",
-    "vuepress-theme-gungnir": "0.1.7"
+    "vuepress-theme-gungnir": "0.3.0"
   }
 }
