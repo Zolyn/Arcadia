@@ -6,9 +6,9 @@ date: 2021-12-22
 tags:
 - 生活
 catalog: true
-header_img: https://cdn.jsdelivr.net/gh/PikaSama/shelter-static@1.5.1/images/pixiv_62560074.png
+header_img: https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@2021.7.12-release.1/Arcadia/images/IMG_20210709_193326.jpg
 ---
-::: warn
+::: warning
 本文负能量指数已爆表，为避免受到影响，请立即关闭此页面
 :::
 
