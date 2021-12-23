@@ -15,7 +15,7 @@ header_img: https://cdn.jsdelivr.net/gh/Zolyn/StaticFiles@2021.7.12-release.1/Ar
 ::: info
 1. 懒得找封面了，用回以前的算了
 2. 意识流文章，请勿带脑子阅读
-3. 我还活着（更新于2021-12-22）
+3. 我还活着（更新于2021-12-23）
 :::
 
 ## 正文
